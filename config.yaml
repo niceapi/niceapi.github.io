@@ -24,15 +24,12 @@ languages:
     contentDir: content
     weight: 1
 
-menu:
+      #menu:
   # before: []
-  after:
-    - name: "Blog"
-      url: "/posts"
-      weight: 10
-    - name: "Github"
-      url: "https://github.com/niceapi/"
-      weight: 10
+  #  after:
+  # - name: "Blog"
+  #   url: "/posts"
+  #   weight: 10
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
