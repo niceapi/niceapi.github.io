@@ -1,4 +1,4 @@
-baseURL: https://localhost:1313
+baseURL: https://niceapi.github.io
 title: Nice API
 theme: hugo-book
 publishDir: ./docs
