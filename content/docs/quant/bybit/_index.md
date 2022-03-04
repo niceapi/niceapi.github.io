@@ -16,4 +16,4 @@ bookCollapseSection: true
  - [行情数据接口](./market-data-endpionts/)
  - [用户数据接口](./user-data-endpionts/)
  - [钱包数据接口](./wallet-data-endpionts/)
- - [其他接口](./other-data-endpionts/)
+ - [其他接口](./api-data-endpionts/)

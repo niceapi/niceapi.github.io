@@ -1,6 +1,7 @@
 baseURL: https://localhost:1313
 title: Nice API
 theme: hugo-book
+publishDir: ./docs
 
 # Book configuration
 disablePathToLower: true
