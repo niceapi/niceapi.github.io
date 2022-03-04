@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quant on Nice API</title>
-    <link>https://localhost:1313/docs/quant/</link>
+    <link>https://niceapi.github.io/docs/quant/</link>
     <description>Recent content in Quant on Nice API</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://localhost:1313/docs/quant/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://niceapi.github.io/docs/quant/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

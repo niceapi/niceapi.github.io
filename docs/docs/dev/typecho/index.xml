@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typecho主题开发文档整理 on Nice API</title>
-    <link>https://localhost:1313/docs/dev/typecho/</link>
+    <link>https://niceapi.github.io/docs/dev/typecho/</link>
     <description>Recent content in Typecho主题开发文档整理 on Nice API</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://localhost:1313/docs/dev/typecho/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://niceapi.github.io/docs/dev/typecho/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速开始</title>
-      <link>https://localhost:1313/docs/dev/typecho/guide/</link>
+      <link>https://niceapi.github.io/docs/dev/typecho/guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/dev/typecho/guide/</guid>
+      <guid>https://niceapi.github.io/docs/dev/typecho/guide/</guid>
       <description>现在还没有太多时间，预计4月份开始整理</description>
     </item>
     

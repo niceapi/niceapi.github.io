@@ -2,70 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nice API</title>
-    <link>https://localhost:1313/</link>
+    <link>https://niceapi.github.io/</link>
     <description>Recent content on Nice API</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Mar 2022 02:59:07 +0000</lastBuildDate><atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 02:59:07 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速开始</title>
-      <link>https://localhost:1313/docs/dev/typecho/guide/</link>
+      <link>https://niceapi.github.io/docs/dev/typecho/guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/dev/typecho/guide/</guid>
+      <guid>https://niceapi.github.io/docs/dev/typecho/guide/</guid>
       <description>现在还没有太多时间，预计4月份开始整理</description>
     </item>
     
     <item>
       <title>行情数据接口</title>
-      <link>https://localhost:1313/docs/quant/bybit/market-data-endpionts/</link>
+      <link>https://niceapi.github.io/docs/quant/bybit/market-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/quant/bybit/market-data-endpionts/</guid>
+      <guid>https://niceapi.github.io/docs/quant/bybit/market-data-endpionts/</guid>
       <description>行情数据</description>
     </item>
     
     <item>
       <title>用户数据接口</title>
-      <link>https://localhost:1313/docs/quant/bybit/user-data-endpionts/</link>
+      <link>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/quant/bybit/user-data-endpionts/</guid>
+      <guid>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</guid>
       <description>测试 #  </description>
     </item>
     
     <item>
       <title>钱包数据接口</title>
-      <link>https://localhost:1313/docs/quant/bybit/wallet-data-endpionts/</link>
+      <link>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/quant/bybit/wallet-data-endpionts/</guid>
+      <guid>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</guid>
       <description>test #  </description>
     </item>
     
     <item>
       <title>其他接口</title>
-      <link>https://localhost:1313/docs/quant/bybit/api-data-endpionts/</link>
+      <link>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/quant/bybit/api-data-endpionts/</guid>
+      <guid>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</guid>
       <description>整合通用API和频率限制、错误码</description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>https://localhost:1313/posts/test/</link>
+      <link>https://niceapi.github.io/posts/test/</link>
       <pubDate>Fri, 04 Mar 2022 02:59:07 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/test/</guid>
+      <guid>https://niceapi.github.io/posts/test/</guid>
       <description>Test</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://localhost:1313/about/</link>
+      <link>https://niceapi.github.io/about/</link>
       <pubDate>Fri, 04 Mar 2022 02:13:53 +0000</pubDate>
       
-      <guid>https://localhost:1313/about/</guid>
+      <guid>https://niceapi.github.io/about/</guid>
       <description>about</description>
     </item>
     
