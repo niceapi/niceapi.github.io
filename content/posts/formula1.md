@@ -1,5 +1,5 @@
 ---
-title: "Formula1"
+title: "涨跌幅、振幅计算公式"
 date: 2022-03-04T14:34:41Z
 # bookComments: false
 # bookSearchExclude: false

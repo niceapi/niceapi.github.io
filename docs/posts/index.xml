@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 04 Mar 2022 14:34:41 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Formula1</title>
+      <title>涨跌幅、振幅计算公式</title>
       <link>https://niceapi.github.io/posts/formula1/</link>
       <pubDate>Fri, 04 Mar 2022 14:34:41 +0000</pubDate>
       
@@ -15,15 +15,6 @@
       <description>公式 #  昨日收盘=今日开盘 涨跌幅=（收盘-开盘）÷开盘 振幅=（最高-最低）÷开盘
 python保存两位小数
 format(5.057, &amp;#39;.2f&amp;#39;) 5.06 后续是不是应该把常用指标的计算公式给加入到文档中？</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://niceapi.github.io/posts/test/</link>
-      <pubDate>Fri, 04 Mar 2022 02:59:07 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/posts/test/</guid>
-      <description>Test</description>
     </item>
     
   </channel>
