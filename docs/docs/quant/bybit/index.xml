@@ -11,7 +11,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/market-data-endpionts/</guid>
-      <description>行情数据</description>
+      <description>API #  注意，本文档仅针对USDT合约交易对。
+RESTful接口
+ 测试网 https://api-testnet.bybit.com 主网1 https://api.bybit.com 主网2 https://api.bytick.com  测试接口
+from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;) print(session.orderbook(symbol=&amp;#34;BTCUSD&amp;#34;)) 查询k线数据 #  请求参数
+   参数 是否必须 类型 说明     symbol true string 交易对   interval true string K线周期   from true int 起始时间   limit false int k线数量，最大200    from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;) print(session.query_kline(  symbol=&amp;#34;BTCUSD&amp;#34;,  interval=&amp;#34;m&amp;#34;, 	from_time=1581231260 	)) 返回参数</description>
     </item>
     
     <item>

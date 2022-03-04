@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="行情数据">
+<meta name="description" content="API #  注意，本文档仅针对USDT合约交易对。
+RESTful接口
+ 测试网 https://api-testnet.bybit.com 主网1 https://api.bybit.com 主网2 https://api.bytick.com  测试接口
+from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;) print(session.orderbook(symbol=&#34;BTCUSD&#34;)) 查询k线数据 #  请求参数
+   参数 是否必须 类型 说明     symbol true string 交易对   interval true string K线周期   from true int 起始时间   limit false int k线数量，最大200    from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;) print(session.query_kline(  symbol=&#34;BTCUSD&#34;,  interval=&#34;m&#34;, 	from_time=1581231260 	)) 返回参数">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="行情数据接口" />
-<meta property="og:description" content="行情数据" />
+<meta property="og:description" content="API #  注意，本文档仅针对USDT合约交易对。
+RESTful接口
+ 测试网 https://api-testnet.bybit.com 主网1 https://api.bybit.com 主网2 https://api.bytick.com  测试接口
+from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;) print(session.orderbook(symbol=&#34;BTCUSD&#34;)) 查询k线数据 #  请求参数
+   参数 是否必须 类型 说明     symbol true string 交易对   interval true string K线周期   from true int 起始时间   limit false int k线数量，最大200    from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;) print(session.query_kline(  symbol=&#34;BTCUSD&#34;,  interval=&#34;m&#34;, 	from_time=1581231260 	)) 返回参数" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/quant/bybit/market-data-endpionts/" /><meta property="article:section" content="docs" />
 
@@ -302,7 +310,17 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#api">API</a></li>
+        <li><a href="#查询k线数据">查询k线数据</a></li>
+        <li><a href="#合约最新信息">合约最新信息</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -313,7 +331,262 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>行情数据</p>
+  <article class="markdown"><h2 id="api">
+  API
+  <a class="anchor" href="#api">#</a>
+</h2>
+<p>注意，本文档仅针对USDT合约交易对。</p>
+<p>RESTful接口</p>
+<ul>
+<li>测试网 
+  <a href="https://api-testnet.bybit.com">https://api-testnet.bybit.com</a></li>
+<li>主网1 
+  <a href="https://api.bybit.com">https://api.bybit.com</a></li>
+<li>主网2 
+  <a href="https://api.bytick.com">https://api.bytick.com</a></li>
+</ul>
+<p>测试接口</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>orderbook(symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSD&#34;</span>))
+</span></span></code></pre></div><h2 id="查询k线数据">
+  查询k线数据
+  <a class="anchor" href="#%e6%9f%a5%e8%af%a2k%e7%ba%bf%e6%95%b0%e6%8d%ae">#</a>
+</h2>
+<p>请求参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必须</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symbol</td>
+<td>true</td>
+<td>string</td>
+<td>交易对</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>true</td>
+<td>string</td>
+<td>K线周期</td>
+</tr>
+<tr>
+<td>from</td>
+<td>true</td>
+<td>int</td>
+<td>起始时间</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>false</td>
+<td>int</td>
+<td>k线数量，最大200</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>query_kline(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSD&#34;</span>,
+</span></span><span style="display:flex;"><span>        interval<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;m&#34;</span>,
+</span></span><span style="display:flex;"><span>	    from_time<span style="color:#f92672">=</span><span style="color:#ae81ff">1581231260</span>
+</span></span><span style="display:flex;"><span>	    ))
+</span></span></code></pre></div><p>返回参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symbol</td>
+<td>string</td>
+<td>交易对</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>string</td>
+<td>k线周期</td>
+</tr>
+<tr>
+<td>open_time</td>
+<td>int</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>open</td>
+<td>string</td>
+<td>开始价格</td>
+</tr>
+<tr>
+<td>high</td>
+<td>string</td>
+<td>最高价格</td>
+</tr>
+<tr>
+<td>low</td>
+<td>string</td>
+<td>最低价格</td>
+</tr>
+<tr>
+<td>close</td>
+<td>string</td>
+<td>结束价格</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>string</td>
+<td>交易量</td>
+</tr>
+<tr>
+<td>turnover</td>
+<td>string</td>
+<td>成交金额</td>
+</tr>
+</tbody>
+</table>
+<h2 id="合约最新信息">
+  合约最新信息
+  <a class="anchor" href="#%e5%90%88%e7%ba%a6%e6%9c%80%e6%96%b0%e4%bf%a1%e6%81%af">#</a>
+</h2>
+<p>请求示例</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>latest_information_for_symbol(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSD&#34;</span>
+</span></span><span style="display:flex;"><span>    ))
+</span></span></code></pre></div><p>返回参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symbol</td>
+<td>string</td>
+<td>交易对</td>
+</tr>
+<tr>
+<td>bid_price</td>
+<td>string</td>
+<td>第一笔挂单买入价</td>
+</tr>
+<tr>
+<td>ask_price</td>
+<td>string</td>
+<td>第一笔挂单卖出价</td>
+</tr>
+<tr>
+<td>last_price</td>
+<td>string</td>
+<td>最新成交价</td>
+</tr>
+<tr>
+<td>tick_direction</td>
+<td>string</td>
+<td>价格变换方向</td>
+</tr>
+<tr>
+<td>prev_price_24h</td>
+<td>string</td>
+<td>24小时前的整点市价</td>
+</tr>
+<tr>
+<td>prev_24h_pcnt</td>
+<td>string</td>
+<td>市价相对24小时变化百分比</td>
+</tr>
+<tr>
+<td>high_price_24h</td>
+<td>string</td>
+<td>24小时最高价</td>
+</tr>
+<tr>
+<td>low_price_24h</td>
+<td>string</td>
+<td>24小时最低价</td>
+</tr>
+<tr>
+<td>prev_price_1h</td>
+<td>string</td>
+<td>1小时前的整点市价</td>
+</tr>
+<tr>
+<td>prev_1h_pcnt</td>
+<td>string</td>
+<td>市价相对一小时前变化百分比</td>
+</tr>
+<tr>
+<td>mark_price</td>
+<td>string</td>
+<td>标记价格</td>
+</tr>
+<tr>
+<td>index_price</td>
+<td>string</td>
+<td>指数价格</td>
+</tr>
+<tr>
+<td>open_interest</td>
+<td>number</td>
+<td>未平仓合约数量</td>
+</tr>
+<tr>
+<td>volume_24h</td>
+<td>number</td>
+<td>24小时成交量</td>
+</tr>
+<tr>
+<td>funding_rate</td>
+<td>string</td>
+<td>资金费率</td>
+</tr>
+<tr>
+<td>predicted_funding_rate</td>
+<td>string</td>
+<td>预测资金费率</td>
+</tr>
+<tr>
+<td>next_funding_time</td>
+<td>string</td>
+<td>下次结算资金费用时间</td>
+</tr>
+<tr>
+<td>countdown_hour</td>
+<td>number</td>
+<td>结算资金费用剩余时间</td>
+</tr>
+<tr>
+<td>delivery_fee_rate</td>
+<td>string</td>
+<td>交割费率（仅交割合约）</td>
+</tr>
+<tr>
+<td>predicted_delivery_price</td>
+<td>string</td>
+<td>预期交割价（仅交割合约）</td>
+</tr>
+<tr>
+<td>delivery_time</td>
+<td>string</td>
+<td>交割时间</td>
+</tr>
+</tbody>
+</table>
+<p>明天继续更新</p>
 </article>
  
       
@@ -353,7 +626,17 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#api">API</a></li>
+        <li><a href="#查询k线数据">查询k线数据</a></li>
+        <li><a href="#合约最新信息">合约最新信息</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  
