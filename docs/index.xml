@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Shell</title>
+      <link>https://niceapi.github.io/docs/programming/linux/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/shell/</guid>
+      <description>Shell</description>
+    </item>
+    
+    <item>
       <title>快速开始</title>
       <link>https://niceapi.github.io/docs/dev/typecho/guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,6 +65,15 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
+      <title>Vim</title>
+      <link>https://niceapi.github.io/docs/programming/linux/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/vim/</guid>
+      <description>Vim</description>
+    </item>
+    
+    <item>
       <title>多线程</title>
       <link>https://niceapi.github.io/docs/programming/python/thread/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,6 +101,15 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
+      <title>Mysql</title>
+      <link>https://niceapi.github.io/docs/programming/linux/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/mysql/</guid>
+      <description>mysql</description>
+    </item>
+    
+    <item>
       <title>钱包数据接口</title>
       <link>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -92,12 +119,48 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
+      <title>Nginx</title>
+      <link>https://niceapi.github.io/docs/programming/linux/nginx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/nginx/</guid>
+      <description>Nginx</description>
+    </item>
+    
+    <item>
       <title>其他接口</title>
       <link>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</guid>
       <description>整合通用API和频率限制、错误码</description>
+    </item>
+    
+    <item>
+      <title>Lnmp</title>
+      <link>https://niceapi.github.io/docs/programming/linux/lnmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/lnmp/</guid>
+      <description>lnmp</description>
+    </item>
+    
+    <item>
+      <title>Candy</title>
+      <link>https://niceapi.github.io/docs/programming/linux/candy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/candy/</guid>
+      <description>candy</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://niceapi.github.io/docs/programming/linux/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/docker/</guid>
+      <description>docker</description>
     </item>
     
     <item>

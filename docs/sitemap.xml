@@ -12,6 +12,8 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/shell/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/dev/typecho/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/dev/typecho/guide/</loc>
@@ -28,6 +30,8 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/vim/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/thread/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</loc>
@@ -36,15 +40,27 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/dev/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/mysql/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/nginx/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/lnmp/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/candy/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/docker/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/requests/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/pymysql/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/flask/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/linux/</loc>
   </url><url>
     <loc>https://niceapi.github.io/posts/</loc>
     <lastmod>2022-03-04T14:34:41+00:00</lastmod>
