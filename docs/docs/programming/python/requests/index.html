@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="requests">
+<meta name="description" content="发送请求 #  req = requests.get(url) req = requests.post(url,data={&#39;key&#39;:&#39;value&#39;}) req = requests.put(url,data={&#39;key&#39;:&#39;value&#39;}) req = requests.delete(url) req = requests.head(url) req = requests.options(url) 响应内容
+req.url req.txet req.json() req.status_code req.history ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Requests" />
-<meta property="og:description" content="requests" />
+<meta property="og:description" content="发送请求 #  req = requests.get(url) req = requests.post(url,data={&#39;key&#39;:&#39;value&#39;}) req = requests.put(url,data={&#39;key&#39;:&#39;value&#39;}) req = requests.delete(url) req = requests.head(url) req = requests.options(url) 响应内容
+req.url req.txet req.json() req.status_code req.history " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/python/requests/" /><meta property="article:section" content="docs" />
 
@@ -141,24 +143,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/quant/ccxt/" class="">CCXT中文文档</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -194,55 +178,11 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/programming/python/derivation/" class="">推导式</a>
-  
-
-        </li>
+    
       
     
       
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/programming/python/iter-and-next/" class="">迭代器和生成器</a>
-  
-
-        </li>
-      
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/programming/python/thread/" class="">多线程</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/programming/python/asyncio/" class="">Asyncio</a>
-  
-
-        </li>
       
     
       
@@ -258,17 +198,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/programming/python/pymysql/" class="">PyMySQL</a>
-  
-
-        </li>
       
     
       
@@ -456,7 +385,15 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#发送请求">发送请求</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -467,8 +404,23 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>requests</p>
-</article>
+  <article class="markdown"><h2 id="发送请求">
+  发送请求
+  <a class="anchor" href="#%e5%8f%91%e9%80%81%e8%af%b7%e6%b1%82">#</a>
+</h2>
+<pre tabindex="0"><code>req = requests.get(url)
+req = requests.post(url,data={&#39;key&#39;:&#39;value&#39;})
+req = requests.put(url,data={&#39;key&#39;:&#39;value&#39;})
+req = requests.delete(url)
+req = requests.head(url)
+req = requests.options(url)
+</code></pre><p>响应内容</p>
+<pre tabindex="0"><code>req.url
+req.txet
+req.json()
+req.status_code
+req.history
+</code></pre></article>
  
       
 
@@ -507,7 +459,15 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#发送请求">发送请求</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  

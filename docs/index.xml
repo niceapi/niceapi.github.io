@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/derivation/</guid>
-      <description>推导式</description>
+      <description></description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/iter-and-next/</guid>
-      <description>迭代器</description>
+      <description></description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/thread/</guid>
-      <description>threading</description>
+      <description></description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/asyncio/</guid>
-      <description>asyncio</description>
+      <description></description>
     </item>
     
     <item>
@@ -125,7 +125,8 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/requests/</guid>
-      <description>requests</description>
+      <description>发送请求 #  req = requests.get(url) req = requests.post(url,data={&amp;#39;key&amp;#39;:&amp;#39;value&amp;#39;}) req = requests.put(url,data={&amp;#39;key&amp;#39;:&amp;#39;value&amp;#39;}) req = requests.delete(url) req = requests.head(url) req = requests.options(url) 响应内容
+req.url req.txet req.json() req.status_code req.history </description>
     </item>
     
     <item>
@@ -134,7 +135,7 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/pymysql/</guid>
-      <description>pymysql</description>
+      <description></description>
     </item>
     
     <item>
@@ -143,7 +144,7 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/flask/</guid>
-      <description>flask</description>
+      <description>最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&amp;#39;/&amp;#39;) def index():  return &amp;#39;Hello World!&amp;#39;  if __name__ == &amp;#39;__main__&amp;#39;:  app.run(host = &amp;#39;0.0.0.0&amp;#39;, port = &amp;#39;5000&amp;#39;) </description>
     </item>
     
     <item>

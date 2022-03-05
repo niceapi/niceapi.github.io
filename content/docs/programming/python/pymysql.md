@@ -8,4 +8,3 @@ weight: 9
 # bookComments: false
 # bookSearchExclude: false
 ---
-pymysql

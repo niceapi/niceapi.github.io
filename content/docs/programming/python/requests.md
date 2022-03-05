@@ -8,4 +8,23 @@ weight: 8
 # bookComments: false
 # bookSearchExclude: false
 ---
-requests
+
+## 发送请求
+```
+req = requests.get(url)
+req = requests.post(url,data={'key':'value'})
+req = requests.put(url,data={'key':'value'})
+req = requests.delete(url)
+req = requests.head(url)
+req = requests.options(url)
+```
+
+响应内容
+```
+req.url
+req.txet
+req.json()
+req.status_code
+req.history
+```
+
