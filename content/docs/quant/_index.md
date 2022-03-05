@@ -1,6 +1,6 @@
 ---
 title: "Quant"
-weight: 2
+weight: 1
 bookFlatSection: true
 # bookToc: true
 # bookHidden: false

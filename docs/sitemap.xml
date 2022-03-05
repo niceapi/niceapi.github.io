@@ -4,9 +4,9 @@
   <url>
     <loc>https://niceapi.github.io/docs/quant/bybit/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/programming/</loc>
-  </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/quant/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/linux/shell/</loc>
   </url><url>
@@ -22,7 +22,7 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/ccxt/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/quant/</loc>
+    <loc>https://niceapi.github.io/docs/programming/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/linux/vim/</loc>
   </url><url>
