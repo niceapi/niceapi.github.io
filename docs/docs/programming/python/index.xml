@@ -66,7 +66,7 @@ req.url req.txet req.json() req.status_code req.history </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/flask/</guid>
-      <description>最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&amp;#39;/&amp;#39;) def index():  return &amp;#39;Hello World!&amp;#39;  if __name__ == &amp;#39;__main__&amp;#39;:  app.run(host = &amp;#39;0.0.0.0&amp;#39;, port = &amp;#39;5000&amp;#39;) </description>
+      <description>最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&amp;#39;/&amp;#39;) def index():  return &amp;#39;Hello World!&amp;#39;  if __name__ == &amp;#39;__main__&amp;#39;:  app.run(host = &amp;#39;0.0.0.0&amp;#39;, port = &amp;#39;5000&amp;#39;) 路由、参数 #  from markupsafe import escape  @app.route(&amp;#39;/user/&amp;lt;username&amp;gt;&amp;#39;) def show_user_profile(username):  # show the user profile for that user  return f&amp;#39;User {escape(username)}&amp;#39;  @app.route(&amp;#39;/post/&amp;lt;int:post_id&amp;gt;&amp;#39;) def show_post(post_id):  # show the post with the given id, the id is an integer  return f&amp;#39;Post {post_id}&amp;#39;  @app.</description>
     </item>
     
   </channel>

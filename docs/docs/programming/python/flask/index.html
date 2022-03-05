@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&#39;/&#39;) def index():  return &#39;Hello World!&#39;  if __name__ == &#39;__main__&#39;:  app.run(host = &#39;0.0.0.0&#39;, port = &#39;5000&#39;) ">
+<meta name="description" content="最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&#39;/&#39;) def index():  return &#39;Hello World!&#39;  if __name__ == &#39;__main__&#39;:  app.run(host = &#39;0.0.0.0&#39;, port = &#39;5000&#39;) 路由、参数 #  from markupsafe import escape  @app.route(&#39;/user/&lt;username&gt;&#39;) def show_user_profile(username):  # show the user profile for that user  return f&#39;User {escape(username)}&#39;  @app.route(&#39;/post/&lt;int:post_id&gt;&#39;) def show_post(post_id):  # show the post with the given id, the id is an integer  return f&#39;Post {post_id}&#39;  @app.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Flask Web" />
-<meta property="og:description" content="最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&#39;/&#39;) def index():  return &#39;Hello World!&#39;  if __name__ == &#39;__main__&#39;:  app.run(host = &#39;0.0.0.0&#39;, port = &#39;5000&#39;) " />
+<meta property="og:description" content="最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&#39;/&#39;) def index():  return &#39;Hello World!&#39;  if __name__ == &#39;__main__&#39;:  app.run(host = &#39;0.0.0.0&#39;, port = &#39;5000&#39;) 路由、参数 #  from markupsafe import escape  @app.route(&#39;/user/&lt;username&gt;&#39;) def show_user_profile(username):  # show the user profile for that user  return f&#39;User {escape(username)}&#39;  @app.route(&#39;/post/&lt;int:post_id&gt;&#39;) def show_post(post_id):  # show the post with the given id, the id is an integer  return f&#39;Post {post_id}&#39;  @app." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/python/flask/" /><meta property="article:section" content="docs" />
 
@@ -388,6 +388,11 @@ https://github.com/alex-shpak/hugo-book
     <li>
       <ul>
         <li><a href="#最小应用">最小应用</a></li>
+        <li><a href="#路由参数">路由、参数</a></li>
+        <li><a href="#重定向">重定向</a></li>
+        <li><a href="#http">HTTP</a></li>
+        <li><a href="#静态文件">静态文件</a></li>
+        <li><a href="#渲染模板">渲染模板</a></li>
       </ul>
     </li>
   </ul>
@@ -416,6 +421,84 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
 </span></span><span style="display:flex;"><span>    app<span style="color:#f92672">.</span>run(host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0.0.0.0&#39;</span>, port <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;5000&#39;</span>)
+</span></span></code></pre></div><h2 id="路由参数">
+  路由、参数
+  <a class="anchor" href="#%e8%b7%af%e7%94%b1%e5%8f%82%e6%95%b0">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> markupsafe <span style="color:#f92672">import</span> escape
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/user/&lt;username&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_user_profile</span>(username):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># show the user profile for that user</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;User </span><span style="color:#e6db74">{</span>escape(username)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/post/&lt;int:post_id&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_post</span>(post_id):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># show the post with the given id, the id is an integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Post </span><span style="color:#e6db74">{</span>post_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/path/&lt;path:subpath&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_subpath</span>(subpath):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># show the subpath after /path/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Subpath </span><span style="color:#e6db74">{</span>escape(subpath)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span></code></pre></div><p>escape是手动转义，出于安全考虑加上
+参数前面可以加转换器，</p>
+<ul>
+<li>string</li>
+<li>int</li>
+<li>float</li>
+<li>path，可包含斜杠</li>
+<li>uuid</li>
+</ul>
+<h2 id="重定向">
+  重定向
+  <a class="anchor" href="#%e9%87%8d%e5%ae%9a%e5%90%91">#</a>
+</h2>
+<p>实战中一定要在后面加斜杠</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/projects/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">projects</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;The project page&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/about&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">about</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;The about page&#39;</span>
+</span></span></code></pre></div><h2 id="http">
+  HTTP
+  <a class="anchor" href="#http">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/login&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;POST&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> do_the_login()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> show_the_login_form()
+</span></span></code></pre></div><h2 id="静态文件">
+  静态文件
+  <a class="anchor" href="#%e9%9d%99%e6%80%81%e6%96%87%e4%bb%b6">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>url_for(<span style="color:#e6db74">&#39;static&#39;</span>, filename<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;style.css&#39;</span>)
+</span></span></code></pre></div><p>系统中对应的位置<code>static/style.css</code></p>
+<h2 id="渲染模板">
+  渲染模板
+  <a class="anchor" href="#%e6%b8%b2%e6%9f%93%e6%a8%a1%e6%9d%bf">#</a>
+</h2>
+<p>在模板内部可以像使用<code>url_for()</code>和<code>get_flashed_messages()</code>函数一样访问<code>config</code>、<code>request</code>、<code>session</code>对象。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> render_template
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/hello/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/hello/&lt;name&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(name<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;hello.html&#39;</span>, name<span style="color:#f92672">=</span>name)
+</span></span></code></pre></div><p>hello.html</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;Hello from Flask&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>{% if name %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;Hello {{ name }}!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% else %}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>{% endif %}
 </span></span></code></pre></div></article>
  
       
@@ -460,6 +543,11 @@ https://github.com/alex-shpak/hugo-book
     <li>
       <ul>
         <li><a href="#最小应用">最小应用</a></li>
+        <li><a href="#路由参数">路由、参数</a></li>
+        <li><a href="#重定向">重定向</a></li>
+        <li><a href="#http">HTTP</a></li>
+        <li><a href="#静态文件">静态文件</a></li>
+        <li><a href="#渲染模板">渲染模板</a></li>
       </ul>
     </li>
   </ul>

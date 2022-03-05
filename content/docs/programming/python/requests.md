@@ -10,7 +10,7 @@ weight: 8
 ---
 
 ## 发送请求
-```
+```python
 req = requests.get(url)
 req = requests.post(url,data={'key':'value'})
 req = requests.put(url,data={'key':'value'})
@@ -20,7 +20,7 @@ req = requests.options(url)
 ```
 
 响应内容
-```
+```python
 req.url
 req.txet
 req.json()
