@@ -1,10 +1,11 @@
 ---
-title: "Quant"
+title: "多线程"
 weight: 2
-bookFlatSection: true
+# bookFlatSection: false
 # bookToc: true
 # bookHidden: false
 # bookCollapseSection: false
 # bookComments: false
 # bookSearchExclude: false
 ---
+threading

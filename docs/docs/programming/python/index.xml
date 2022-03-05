@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Nice API</title>
+    <link>https://niceapi.github.io/docs/programming/python/</link>
+    <description>Recent content in Python on Nice API</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://niceapi.github.io/docs/programming/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>推导式</title>
+      <link>https://niceapi.github.io/docs/programming/python/derivation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/derivation/</guid>
+      <description>推导式</description>
+    </item>
+    
+    <item>
+      <title>迭代器和生成器</title>
+      <link>https://niceapi.github.io/docs/programming/python/iter-and-next/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/iter-and-next/</guid>
+      <description>迭代器</description>
+    </item>
+    
+    <item>
+      <title>多线程</title>
+      <link>https://niceapi.github.io/docs/programming/python/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/thread/</guid>
+      <description>threading</description>
+    </item>
+    
+    <item>
+      <title>Asyncio异步模块</title>
+      <link>https://niceapi.github.io/docs/programming/python/asyncio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/asyncio/</guid>
+      <description>asyncio</description>
+    </item>
+    
+    <item>
+      <title>Requests</title>
+      <link>https://niceapi.github.io/docs/programming/python/requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/requests/</guid>
+      <description>requests</description>
+    </item>
+    
+    <item>
+      <title>PyMySQL</title>
+      <link>https://niceapi.github.io/docs/programming/python/pymysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/pymysql/</guid>
+      <description>pymysql</description>
+    </item>
+    
+    <item>
+      <title>Flask Web</title>
+      <link>https://niceapi.github.io/docs/programming/python/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/flask/</guid>
+      <description>flask</description>
+    </item>
+    
+  </channel>
+</rss>

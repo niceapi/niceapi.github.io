@@ -1,10 +1,11 @@
 ---
-title: "Quant"
-weight: 2
-bookFlatSection: true
+title: "Python"
+weight: 1
+# bookFlatSection: true
 # bookToc: true
 # bookHidden: false
-# bookCollapseSection: false
+bookCollapseSection: true
 # bookComments: false
 # bookSearchExclude: false
 ---
+Python

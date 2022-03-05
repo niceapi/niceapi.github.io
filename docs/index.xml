@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 04 Mar 2022 13:37:57 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Axios</title>
+      <link>https://niceapi.github.io/docs/programming/javascript/axios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/javascript/axios/</guid>
+      <description>axios</description>
+    </item>
+    
+    <item>
       <title>快速开始</title>
       <link>https://niceapi.github.io/docs/dev/typecho/guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/dev/typecho/guide/</guid>
       <description>现在还没有太多时间，预计4月份开始整理</description>
+    </item>
+    
+    <item>
+      <title>推导式</title>
+      <link>https://niceapi.github.io/docs/programming/python/derivation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/derivation/</guid>
+      <description>推导式</description>
     </item>
     
     <item>
@@ -29,12 +47,39 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
+      <title>迭代器和生成器</title>
+      <link>https://niceapi.github.io/docs/programming/python/iter-and-next/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/iter-and-next/</guid>
+      <description>迭代器</description>
+    </item>
+    
+    <item>
+      <title>多线程</title>
+      <link>https://niceapi.github.io/docs/programming/python/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/thread/</guid>
+      <description>threading</description>
+    </item>
+    
+    <item>
       <title>用户数据接口</title>
       <link>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</guid>
       <description>测试 #  </description>
+    </item>
+    
+    <item>
+      <title>Asyncio异步模块</title>
+      <link>https://niceapi.github.io/docs/programming/python/asyncio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/asyncio/</guid>
+      <description>asyncio</description>
     </item>
     
     <item>
@@ -56,6 +101,33 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
+      <title>Requests</title>
+      <link>https://niceapi.github.io/docs/programming/python/requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/requests/</guid>
+      <description>requests</description>
+    </item>
+    
+    <item>
+      <title>PyMySQL</title>
+      <link>https://niceapi.github.io/docs/programming/python/pymysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/pymysql/</guid>
+      <description>pymysql</description>
+    </item>
+    
+    <item>
+      <title>Flask Web</title>
+      <link>https://niceapi.github.io/docs/programming/python/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/flask/</guid>
+      <description>flask</description>
+    </item>
+    
+    <item>
       <title>涨跌幅、振幅计算公式</title>
       <link>https://niceapi.github.io/posts/formula1/</link>
       <pubDate>Fri, 04 Mar 2022 14:34:41 +0000</pubDate>
@@ -64,15 +136,6 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       <description>公式 #  昨日收盘=今日开盘 涨跌幅=（收盘-开盘）÷开盘 振幅=（最高-最低）÷开盘
 python保存两位小数
 format(5.057, &amp;#39;.2f&amp;#39;) 5.06 后续是不是应该把常用指标的计算公式给加入到文档中？</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://niceapi.github.io/about/</link>
-      <pubDate>Fri, 04 Mar 2022 02:13:53 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/about/</guid>
-      <description>about</description>
     </item>
     
   </channel>

@@ -2,27 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://niceapi.github.io/docs/programming/javascript/axios/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/quant/</loc>
+    <loc>https://niceapi.github.io/docs/programming/javascript/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/dev/typecho/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/dev/typecho/guide/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/derivation/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/market-data-endpionts/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/iter-and-next/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/ccxt/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/dev/</loc>
-  </url><url>
     <loc>https://niceapi.github.io/docs/dev/hugo/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/quant/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/thread/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/asyncio/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/dev/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/requests/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/pymysql/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/flask/</loc>
   </url><url>
     <loc>https://niceapi.github.io/posts/</loc>
     <lastmod>2022-03-04T14:34:41+00:00</lastmod>
@@ -32,9 +54,6 @@
   </url><url>
     <loc>https://niceapi.github.io/</loc>
     <lastmod>2022-03-04T13:37:57+00:00</lastmod>
-  </url><url>
-    <loc>https://niceapi.github.io/about/</loc>
-    <lastmod>2022-03-04T02:13:53+00:00</lastmod>
   </url><url>
     <loc>https://niceapi.github.io/categories/</loc>
   </url><url>
