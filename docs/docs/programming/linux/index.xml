@@ -33,39 +33,12 @@
     </item>
     
     <item>
-      <title>Nginx</title>
-      <link>https://niceapi.github.io/docs/programming/linux/nginx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/nginx/</guid>
-      <description>Nginx</description>
-    </item>
-    
-    <item>
       <title>Lnmp</title>
       <link>https://niceapi.github.io/docs/programming/linux/lnmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/linux/lnmp/</guid>
       <description>lnmp</description>
-    </item>
-    
-    <item>
-      <title>Candy</title>
-      <link>https://niceapi.github.io/docs/programming/linux/candy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/candy/</guid>
-      <description>candy</description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://niceapi.github.io/docs/programming/linux/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/docker/</guid>
-      <description>docker</description>
     </item>
     
   </channel>

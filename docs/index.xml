@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 04 Mar 2022 13:37:57 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Axios</title>
-      <link>https://niceapi.github.io/docs/programming/javascript/axios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/javascript/axios/</guid>
-      <description>axios</description>
-    </item>
-    
-    <item>
       <title>Shell</title>
       <link>https://niceapi.github.io/docs/programming/linux/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -92,7 +83,7 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
-      <title>Asyncio异步模块</title>
+      <title>Asyncio</title>
       <link>https://niceapi.github.io/docs/programming/python/asyncio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -119,15 +110,6 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
-      <title>Nginx</title>
-      <link>https://niceapi.github.io/docs/programming/linux/nginx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/nginx/</guid>
-      <description>Nginx</description>
-    </item>
-    
-    <item>
       <title>其他接口</title>
       <link>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -143,24 +125,6 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       
       <guid>https://niceapi.github.io/docs/programming/linux/lnmp/</guid>
       <description>lnmp</description>
-    </item>
-    
-    <item>
-      <title>Candy</title>
-      <link>https://niceapi.github.io/docs/programming/linux/candy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/candy/</guid>
-      <description>candy</description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://niceapi.github.io/docs/programming/linux/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/docker/</guid>
-      <description>docker</description>
     </item>
     
     <item>

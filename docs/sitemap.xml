@@ -2,11 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://niceapi.github.io/docs/programming/javascript/axios/</loc>
-  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/</loc>
-  </url><url>
-    <loc>https://niceapi.github.io/docs/programming/javascript/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/</loc>
   </url><url>
@@ -26,8 +22,6 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/ccxt/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/dev/hugo/</loc>
-  </url><url>
     <loc>https://niceapi.github.io/docs/quant/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/linux/vim/</loc>
@@ -44,15 +38,9 @@
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</loc>
   </url><url>
-    <loc>https://niceapi.github.io/docs/programming/linux/nginx/</loc>
-  </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/linux/lnmp/</loc>
-  </url><url>
-    <loc>https://niceapi.github.io/docs/programming/linux/candy/</loc>
-  </url><url>
-    <loc>https://niceapi.github.io/docs/programming/linux/docker/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/requests/</loc>
   </url><url>
