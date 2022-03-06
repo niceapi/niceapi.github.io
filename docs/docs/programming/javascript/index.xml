@@ -11,7 +11,22 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/javascript/axios/</guid>
-      <description>axios</description>
+      <description>CDN #  jsDelivr
+&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; unpkg
+&amp;lt;script src=&amp;#34;https://unpkg.com/axios/dist/axios.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; GET #  以下所有例子将省略本行代码：
+const axios = require(&amp;#39;axios&amp;#39;); 最简单的请求（默认GET）：
+axios(&amp;#39;/user/12345&amp;#39;); // 向给定ID的用户发起请求 axios.get(&amp;#39;/user?ID=12345&amp;#39;)  .then(function (response) {  // 处理成功情况  console.log(response);  })  .catch(function (error) {  // 处理错误情况  console.log(error);  })  .then(function () {  // 总是会执行  }); 换种写法：
+axios.get(&amp;#39;/user&amp;#39;, {  params: {  ID: 12345  }  })  .then(function (response) {  console.</description>
+    </item>
+    
+    <item>
+      <title>渐进式加载</title>
+      <link>https://niceapi.github.io/docs/programming/javascript/pwa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/javascript/pwa/</guid>
+      <description>Manifests.json #  Manifests.json
+{  &amp;#34;name&amp;#34;: &amp;#34;My PWA!&amp;#34;,  &amp;#34;short_name&amp;#34;: &amp;#34;PWA&amp;#34;,  &amp;#34;start_url&amp;#34;: &amp;#34;.&amp;#34;,  &amp;#34;display&amp;#34;: &amp;#34;standalone&amp;#34; }  // name -- PWA name // short_name -- Show underneath the mobile app icon // start_url -- If the user taps on the icon, this url is launched // display -- Customize what browser UI is shown when your app is launched. &amp;lt;link rel=&amp;#34;manifest&amp;#34; href=&amp;#34;/manifest.json&amp;#34;&amp;gt; Service Worker #  service-worker.js</description>
     </item>
     
   </channel>

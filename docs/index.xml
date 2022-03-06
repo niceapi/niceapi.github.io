@@ -95,6 +95,20 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
     </item>
     
     <item>
+      <title>Axios</title>
+      <link>https://niceapi.github.io/docs/programming/javascript/axios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/javascript/axios/</guid>
+      <description>CDN #  jsDelivr
+&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; unpkg
+&amp;lt;script src=&amp;#34;https://unpkg.com/axios/dist/axios.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; GET #  以下所有例子将省略本行代码：
+const axios = require(&amp;#39;axios&amp;#39;); 最简单的请求（默认GET）：
+axios(&amp;#39;/user/12345&amp;#39;); // 向给定ID的用户发起请求 axios.get(&amp;#39;/user?ID=12345&amp;#39;)  .then(function (response) {  // 处理成功情况  console.log(response);  })  .catch(function (error) {  // 处理错误情况  console.log(error);  })  .then(function () {  // 总是会执行  }); 换种写法：
+axios.get(&amp;#39;/user&amp;#39;, {  params: {  ID: 12345  }  })  .then(function (response) {  console.</description>
+    </item>
+    
+    <item>
       <title>Mysql</title>
       <link>https://niceapi.github.io/docs/programming/linux/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,6 +127,15 @@ systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB sys
       
       <guid>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</guid>
       <description>账户划转 #  合约、现货、理财账户资金划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_internal_transfer(  transfer_id=str(uuid4()),  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  from_account_type=&amp;#34;SPOT&amp;#34;,  to_account_type=&amp;#34;CONTRACT&amp;#34; )) 子母账户划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_subaccount_transfer(  transfer_id=str(uuid4()), # UUID，全局唯一  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  sub_user_id=251711, # 子账户id  type=&amp;#34;IN&amp;#34; # 转入转出类型 )) </description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https://niceapi.github.io/docs/programming/linux/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/linux/mongodb/</guid>
+      <description>mongodb真好</description>
     </item>
     
     <item>
@@ -151,6 +174,16 @@ req.url req.txet req.json() req.status_code req.history </description>
       
       <guid>https://niceapi.github.io/docs/programming/python/flask/</guid>
       <description>最小应用 #  from flask import Flask  app = Flask(__name__)  @app.route(&amp;#39;/&amp;#39;) def index():  return &amp;#39;Hello World!&amp;#39;  if __name__ == &amp;#39;__main__&amp;#39;:  app.run(host = &amp;#39;0.0.0.0&amp;#39;, port = &amp;#39;5000&amp;#39;) 路由、参数 #  from markupsafe import escape  @app.route(&amp;#39;/user/&amp;lt;username&amp;gt;&amp;#39;) def show_user_profile(username):  # show the user profile for that user  return f&amp;#39;User {escape(username)}&amp;#39;  @app.route(&amp;#39;/post/&amp;lt;int:post_id&amp;gt;&amp;#39;) def show_post(post_id):  # show the post with the given id, the id is an integer  return f&amp;#39;Post {post_id}&amp;#39;  @app.</description>
+    </item>
+    
+    <item>
+      <title>渐进式加载</title>
+      <link>https://niceapi.github.io/docs/programming/javascript/pwa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/javascript/pwa/</guid>
+      <description>Manifests.json #  Manifests.json
+{  &amp;#34;name&amp;#34;: &amp;#34;My PWA!&amp;#34;,  &amp;#34;short_name&amp;#34;: &amp;#34;PWA&amp;#34;,  &amp;#34;start_url&amp;#34;: &amp;#34;.&amp;#34;,  &amp;#34;display&amp;#34;: &amp;#34;standalone&amp;#34; }  // name -- PWA name // short_name -- Show underneath the mobile app icon // start_url -- If the user taps on the icon, this url is launched // display -- Customize what browser UI is shown when your app is launched. &amp;lt;link rel=&amp;#34;manifest&amp;#34; href=&amp;#34;/manifest.json&amp;#34;&amp;gt; Service Worker #  service-worker.js</description>
     </item>
     
     <item>
