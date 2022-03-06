@@ -8,4 +8,3 @@ bookCollapseSection: true
 # bookComments: false
 # bookSearchExclude: false
 ---
-Python
