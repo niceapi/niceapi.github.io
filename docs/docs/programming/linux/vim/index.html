@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="插件 #  emmet-vim #  写前端必备的emmet插件
+<meta name="description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  emmet-vim #  写前端必备的emmet插件
 git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Vim" />
-<meta property="og:description" content="插件 #  emmet-vim #  写前端必备的emmet插件
+<meta property="og:description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  emmet-vim #  写前端必备的emmet插件
 git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/linux/vim/" /><meta property="article:section" content="docs" />
@@ -389,6 +391,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#基础操作">基础操作</a>
+          <ul>
+            <li><a href="#一般模式">一般模式</a></li>
+            <li><a href="#编辑模式">编辑模式</a></li>
+            <li><a href="#底线模式">底线模式</a></li>
+          </ul>
+        </li>
         <li><a href="#插件">插件</a>
           <ul>
             <li><a href="#emmet-vim">emmet-vim</a></li>
@@ -408,7 +417,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="插件">
+  <article class="markdown"><h2 id="基础操作">
+  基础操作
+  <a class="anchor" href="#%e5%9f%ba%e7%a1%80%e6%93%8d%e4%bd%9c">#</a>
+</h2>
+<h3 id="一般模式">
+  一般模式
+  <a class="anchor" href="#%e4%b8%80%e8%88%ac%e6%a8%a1%e5%bc%8f">#</a>
+</h3>
+<h3 id="编辑模式">
+  编辑模式
+  <a class="anchor" href="#%e7%bc%96%e8%be%91%e6%a8%a1%e5%bc%8f">#</a>
+</h3>
+<h3 id="底线模式">
+  底线模式
+  <a class="anchor" href="#%e5%ba%95%e7%ba%bf%e6%a8%a1%e5%bc%8f">#</a>
+</h3>
+<p>搜索替换：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span># <span style="color:#a6e22e">用法</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">n1</span>,<span style="color:#a6e22e">n2s</span><span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">示例</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">1</span>,$<span style="color:#a6e22e">s</span><span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">1</span>,$<span style="color:#a6e22e">s</span><span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">gc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">100</span>s<span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">gc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="插件">
   插件
   <a class="anchor" href="#%e6%8f%92%e4%bb%b6">#</a>
 </h2>
@@ -417,7 +449,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#emmet-vim">#</a>
 </h3>
 <p>写前端必备的emmet插件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/mattn/emmet-vim.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/mattn/emmet-vim.git
 </span></span><span style="display:flex;"><span>cd emmet-vim
 </span></span><span style="display:flex;"><span>mkdir .vim
 </span></span><span style="display:flex;"><span>mkdir .vim/plugin
@@ -468,6 +500,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#基础操作">基础操作</a>
+          <ul>
+            <li><a href="#一般模式">一般模式</a></li>
+            <li><a href="#编辑模式">编辑模式</a></li>
+            <li><a href="#底线模式">底线模式</a></li>
+          </ul>
+        </li>
         <li><a href="#插件">插件</a>
           <ul>
             <li><a href="#emmet-vim">emmet-vim</a></li>

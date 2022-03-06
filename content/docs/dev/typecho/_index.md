@@ -18,3 +18,5 @@ bookCollapseSection: true
  - 评论
  - 留言墙
  - 友情链接
+ - 通用样式
+ - JavaScript功能

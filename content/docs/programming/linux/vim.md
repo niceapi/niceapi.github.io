@@ -9,13 +9,29 @@ weight: 2
 # bookSearchExclude: false
 ---
 
+## 基础操作
+
+### 一般模式
+### 编辑模式
+### 底线模式
+
+搜索替换：
+```vim
+# 用法
+:n1,n2s/word1/word2/g
+# 示例
+:1,$s/word1/word2/g
+:1,$s/word1/word2/gc
+:50,100s/word1/word2/gc
+```
+
 ## 插件
 
 ### emmet-vim
 
 写前端必备的emmet插件
 
-```shell
+```bash
 git clone https://github.com/mattn/emmet-vim.git
 cd emmet-vim
 mkdir .vim
