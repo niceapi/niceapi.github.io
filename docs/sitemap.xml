@@ -4,6 +4,8 @@
   <url>
     <loc>https://niceapi.github.io/docs/quant/bybit/</loc>
   </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/flask-socket-io/</loc>
+  </url><url>
     <loc>https://niceapi.github.io/docs/programming/javascript/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/python/</loc>
@@ -11,6 +13,10 @@
     <loc>https://niceapi.github.io/docs/quant/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/programming/linux/shell/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/socket-io/</loc>
+  </url><url>
+    <loc>https://niceapi.github.io/docs/programming/python/sqlalchemy/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/dev/typecho/</loc>
   </url><url>
@@ -39,8 +45,6 @@
     <loc>https://niceapi.github.io/docs/programming/linux/mysql/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</loc>
-  </url><url>
-    <loc>https://niceapi.github.io/docs/programming/linux/mongodb/</loc>
   </url><url>
     <loc>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</loc>
   </url><url>

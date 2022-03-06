@@ -1,6 +1,6 @@
 ---
-title: "MongoDB"
-weight: 4
+title: "Flask Socket Io"
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -8,5 +8,3 @@ weight: 4
 # bookComments: false
 # bookSearchExclude: false
 ---
-mongodb真好
-

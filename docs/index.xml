@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 04 Mar 2022 13:37:57 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Flask Socket Io</title>
+      <link>https://niceapi.github.io/docs/programming/python/flask-socket-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/flask-socket-io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Shell</title>
       <link>https://niceapi.github.io/docs/programming/linux/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,6 +23,24 @@
       <guid>https://niceapi.github.io/docs/programming/linux/shell/</guid>
       <description>Shell
 expect #  </description>
+    </item>
+    
+    <item>
+      <title>Socket Io</title>
+      <link>https://niceapi.github.io/docs/programming/python/socket-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/socket-io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sqlalchemy</title>
+      <link>https://niceapi.github.io/docs/programming/python/sqlalchemy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/sqlalchemy/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -128,15 +155,6 @@ systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB sys
       
       <guid>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</guid>
       <description>账户划转 #  合约、现货、理财账户资金划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_internal_transfer(  transfer_id=str(uuid4()),  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  from_account_type=&amp;#34;SPOT&amp;#34;,  to_account_type=&amp;#34;CONTRACT&amp;#34; )) 子母账户划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_subaccount_transfer(  transfer_id=str(uuid4()), # UUID，全局唯一  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  sub_user_id=251711, # 子账户id  type=&amp;#34;IN&amp;#34; # 转入转出类型 )) </description>
-    </item>
-    
-    <item>
-      <title>MongoDB</title>
-      <link>https://niceapi.github.io/docs/programming/linux/mongodb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/programming/linux/mongodb/</guid>
-      <description>mongodb真好</description>
     </item>
     
     <item>
