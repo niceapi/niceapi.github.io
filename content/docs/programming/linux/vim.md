@@ -27,6 +27,19 @@ weight: 2
 
 ## 插件
 
+### vim8插件管理
+
+创建两个文件夹：
+```bash
+mkdir .vim/pack/[name]/start -p
+mkdir .vim/pack/[name]/opt -p
+```
+
+start是自动加载，opt是手动加载，手动加载命令：
+```vim
+:packadd [plugin]
+```
+
 ### emmet-vim
 
 写前端必备的emmet插件
