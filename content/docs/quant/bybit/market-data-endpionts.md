@@ -95,4 +95,46 @@ print(session.latest_information_for_symbol(
 |predicted_delivery_price|string|预期交割价（仅交割合约）|
 |delivery_time|string|交割时间|
 
-明天继续更新
+## 平仓交易历史数据
+
+```python
+from pybit import HTTP
+session = HTTP("https://api-testnet.bybit.com")
+print(session.public_trading_records(
+    symbol="BTCUSDT",
+    limit=500
+))
+```
+
+## 查询合约信息
+
+```python
+from pybit import HTTP
+session = HTTP("https://api-testnet.bybit.com")
+print(session.query_symbol())
+```
+
+## 查询上个周期的资金费率
+
+```python
+from pybit import HTTP
+session = HTTP("https://api-testnet.bybit.com")
+print(session.get_the_last_funding_rate(
+    symbol="BTCUSDT"
+))
+```
+
+## 标记价格K线
+
+```python
+from pybit import HTTP
+session = HTTP("https://api-testnet.bybit.com",
+               api_key="", api_secret="")
+print(session.query_mark_price_kline(
+    symbol="BTCUSDT",
+    interval=1,
+    limit=2,
+    from_time=1581231260
+)
+```
+

@@ -19,12 +19,12 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
     </item>
     
     <item>
-      <title>用户数据接口</title>
-      <link>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</link>
+      <title>交易数据接口</title>
+      <link>https://niceapi.github.io/docs/quant/bybit/trading-data-endpionts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</guid>
-      <description>测试 #  </description>
+      <guid>https://niceapi.github.io/docs/quant/bybit/trading-data-endpionts/</guid>
+      <description>活动单 #  创建活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.place_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34;,  side=&amp;#34;Sell&amp;#34;,  order_type=&amp;#34;Limit&amp;#34;,  qty=0.01,  price=8083,  time_in_force=&amp;#34;GoodTillCancel&amp;#34;,  reduce_only=False,  close_on_trigger=False )) 查询活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.get_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34; )) 撤销活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.cancel_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34;,  order_id=&amp;#34;&amp;#34; )) 撤销所有活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</guid>
-      <description>test #  </description>
+      <description>账户划转 #  合约、现货、理财账户资金划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_internal_transfer(  transfer_id=str(uuid4()),  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  from_account_type=&amp;#34;SPOT&amp;#34;,  to_account_type=&amp;#34;CONTRACT&amp;#34; )) 子母账户划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_subaccount_transfer(  transfer_id=str(uuid4()), # UUID，全局唯一  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  sub_user_id=251711, # 子账户id  type=&amp;#34;IN&amp;#34; # 转入转出类型 )) </description>
     </item>
     
     <item>
@@ -42,7 +42,8 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</guid>
-      <description>整合通用API和频率限制、错误码</description>
+      <description>获取bybit服务器时间 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;) print(session.server_time()) 返回结果：
+{  &amp;#34;ret_code&amp;#34;: 0,  &amp;#34;ret_msg&amp;#34;: &amp;#34;OK&amp;#34;,  &amp;#34;ext_code&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;ext_info&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;result&amp;#34;: {},  &amp;#34;time_now&amp;#34;: &amp;#34;1577444332.192859&amp;#34; } </description>
     </item>
     
   </channel>

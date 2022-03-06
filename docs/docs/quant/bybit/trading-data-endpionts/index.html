@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="活动单 #  创建活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.place_active_order(  symbol=&#34;BTCUSDT&#34;,  side=&#34;Sell&#34;,  order_type=&#34;Limit&#34;,  qty=0.01,  price=8083,  time_in_force=&#34;GoodTillCancel&#34;,  reduce_only=False,  close_on_trigger=False )) 查询活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.get_active_order(  symbol=&#34;BTCUSDT&#34; )) 撤销活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.cancel_active_order(  symbol=&#34;BTCUSDT&#34;,  order_id=&#34;&#34; )) 撤销所有活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="交易数据接口" />
+<meta property="og:description" content="活动单 #  创建活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.place_active_order(  symbol=&#34;BTCUSDT&#34;,  side=&#34;Sell&#34;,  order_type=&#34;Limit&#34;,  qty=0.01,  price=8083,  time_in_force=&#34;GoodTillCancel&#34;,  reduce_only=False,  close_on_trigger=False )) 查询活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.get_active_order(  symbol=&#34;BTCUSDT&#34; )) 撤销活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet.bybit.com&#34;,  api_key=&#34;&#34;, api_secret=&#34;&#34;) print(session.cancel_active_order(  symbol=&#34;BTCUSDT&#34;,  order_id=&#34;&#34; )) 撤销所有活动委托单 #  from pybit import HTTP session = HTTP(&#34;https://api-testnet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://niceapi.github.io/docs/quant/bybit/trading-data-endpionts/" /><meta property="article:section" content="docs" />
+
+
+
+<title>交易数据接口 | Nice API</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Nice API</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Quant</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bafd5750c16aeb31b26eea600a2d9e22" class="toggle" checked />
+    <label for="section-bafd5750c16aeb31b26eea600a2d9e22" class="flex justify-between">
+      <a href="/docs/quant/bybit/" class="">Bybit量化交易接口</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/market-data-endpionts/" class="">行情数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/trading-data-endpionts/" class=" active">交易数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/wallet-data-endpionts/" class="">钱包数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/api-data-endpionts/" class="">其他接口</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Programming</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0026b50f5ce95b86be9d47f6d4775604" class="toggle"  />
+    <label for="section-0026b50f5ce95b86be9d47f6d4775604" class="flex justify-between">
+      <a href="/docs/programming/python/" class="">Python</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/python/requests/" class="">Requests</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/python/flask/" class="">Flask Web</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cfdedc2f56b640aa5073ea13252dd843" class="toggle"  />
+    <label for="section-cfdedc2f56b640aa5073ea13252dd843" class="flex justify-between">
+      <a role="button" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/shell/" class="">Shell</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/vim/" class="">Vim</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/mysql/" class="">Mysql</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Dev</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ae115d2a9ccb9f904bf887d848b5f4" class="toggle"  />
+    <label for="section-c0ae115d2a9ccb9f904bf887d848b5f4" class="flex justify-between">
+      <a href="/docs/dev/typecho/" class="">Typecho主题开发文档整理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/dev/typecho/guide/" class="">快速开始</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>交易数据接口</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#活动单">活动单</a>
+          <ul>
+            <li><a href="#创建活动委托单">创建活动委托单</a></li>
+            <li><a href="#查询活动委托单">查询活动委托单</a></li>
+            <li><a href="#撤销活动委托单">撤销活动委托单</a></li>
+            <li><a href="#撤销所有活动委托单">撤销所有活动委托单</a></li>
+            <li><a href="#修改活动单信息">修改活动单信息</a></li>
+            <li><a href="#实时查询活动委托">实时查询活动委托</a></li>
+          </ul>
+        </li>
+        <li><a href="#条件单">条件单</a>
+          <ul>
+            <li><a href="#创建条件委托单">创建条件委托单</a></li>
+            <li><a href="#查询条件委托单">查询条件委托单</a></li>
+            <li><a href="#撤销条件委托单">撤销条件委托单</a></li>
+            <li><a href="#撤销全部条件委托单">撤销全部条件委托单</a></li>
+            <li><a href="#修改条件委托单">修改条件委托单</a></li>
+            <li><a href="#实时查询条件委托单">实时查询条件委托单</a></li>
+          </ul>
+        </li>
+        <li><a href="#持仓">持仓</a></li>
+        <li><a href="#风险限制">风险限制</a></li>
+        <li><a href="#资金费率">资金费率</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="活动单">
+  活动单
+  <a class="anchor" href="#%e6%b4%bb%e5%8a%a8%e5%8d%95">#</a>
+</h2>
+<h3 id="创建活动委托单">
+  创建活动委托单
+  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e6%b4%bb%e5%8a%a8%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>,
+</span></span><span style="display:flex;"><span>               api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, api_secret<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>place_active_order(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSDT&#34;</span>,
+</span></span><span style="display:flex;"><span>    side<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sell&#34;</span>,
+</span></span><span style="display:flex;"><span>    order_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Limit&#34;</span>,
+</span></span><span style="display:flex;"><span>    qty<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>,
+</span></span><span style="display:flex;"><span>    price<span style="color:#f92672">=</span><span style="color:#ae81ff">8083</span>,
+</span></span><span style="display:flex;"><span>    time_in_force<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GoodTillCancel&#34;</span>,
+</span></span><span style="display:flex;"><span>    reduce_only<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>    close_on_trigger<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>))
+</span></span></code></pre></div><h3 id="查询活动委托单">
+  查询活动委托单
+  <a class="anchor" href="#%e6%9f%a5%e8%af%a2%e6%b4%bb%e5%8a%a8%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>,
+</span></span><span style="display:flex;"><span>               api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, api_secret<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>get_active_order(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSDT&#34;</span>
+</span></span><span style="display:flex;"><span>))
+</span></span></code></pre></div><h3 id="撤销活动委托单">
+  撤销活动委托单
+  <a class="anchor" href="#%e6%92%a4%e9%94%80%e6%b4%bb%e5%8a%a8%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>,
+</span></span><span style="display:flex;"><span>               api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, api_secret<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>cancel_active_order(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSDT&#34;</span>,
+</span></span><span style="display:flex;"><span>    order_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>))
+</span></span></code></pre></div><h3 id="撤销所有活动委托单">
+  撤销所有活动委托单
+  <a class="anchor" href="#%e6%92%a4%e9%94%80%e6%89%80%e6%9c%89%e6%b4%bb%e5%8a%a8%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pybit <span style="color:#f92672">import</span> HTTP
+</span></span><span style="display:flex;"><span>session <span style="color:#f92672">=</span> HTTP(<span style="color:#e6db74">&#34;https://api-testnet.bybit.com&#34;</span>,
+</span></span><span style="display:flex;"><span>               api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, api_secret<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>print(session<span style="color:#f92672">.</span>cancel_all_active_orders(
+</span></span><span style="display:flex;"><span>    symbol<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;BTCUSDT&#34;</span>
+</span></span><span style="display:flex;"><span>))
+</span></span></code></pre></div><h3 id="修改活动单信息">
+  修改活动单信息
+  <a class="anchor" href="#%e4%bf%ae%e6%94%b9%e6%b4%bb%e5%8a%a8%e5%8d%95%e4%bf%a1%e6%81%af">#</a>
+</h3>
+<h3 id="实时查询活动委托">
+  实时查询活动委托
+  <a class="anchor" href="#%e5%ae%9e%e6%97%b6%e6%9f%a5%e8%af%a2%e6%b4%bb%e5%8a%a8%e5%a7%94%e6%89%98">#</a>
+</h3>
+<h2 id="条件单">
+  条件单
+  <a class="anchor" href="#%e6%9d%a1%e4%bb%b6%e5%8d%95">#</a>
+</h2>
+<h3 id="创建条件委托单">
+  创建条件委托单
+  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h3 id="查询条件委托单">
+  查询条件委托单
+  <a class="anchor" href="#%e6%9f%a5%e8%af%a2%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h3 id="撤销条件委托单">
+  撤销条件委托单
+  <a class="anchor" href="#%e6%92%a4%e9%94%80%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h3 id="撤销全部条件委托单">
+  撤销全部条件委托单
+  <a class="anchor" href="#%e6%92%a4%e9%94%80%e5%85%a8%e9%83%a8%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h3 id="修改条件委托单">
+  修改条件委托单
+  <a class="anchor" href="#%e4%bf%ae%e6%94%b9%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h3 id="实时查询条件委托单">
+  实时查询条件委托单
+  <a class="anchor" href="#%e5%ae%9e%e6%97%b6%e6%9f%a5%e8%af%a2%e6%9d%a1%e4%bb%b6%e5%a7%94%e6%89%98%e5%8d%95">#</a>
+</h3>
+<h2 id="持仓">
+  持仓
+  <a class="anchor" href="#%e6%8c%81%e4%bb%93">#</a>
+</h2>
+<h2 id="风险限制">
+  风险限制
+  <a class="anchor" href="#%e9%a3%8e%e9%99%a9%e9%99%90%e5%88%b6">#</a>
+</h2>
+<h2 id="资金费率">
+  资金费率
+  <a class="anchor" href="#%e8%b5%84%e9%87%91%e8%b4%b9%e7%8e%87">#</a>
+</h2>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#活动单">活动单</a>
+          <ul>
+            <li><a href="#创建活动委托单">创建活动委托单</a></li>
+            <li><a href="#查询活动委托单">查询活动委托单</a></li>
+            <li><a href="#撤销活动委托单">撤销活动委托单</a></li>
+            <li><a href="#撤销所有活动委托单">撤销所有活动委托单</a></li>
+            <li><a href="#修改活动单信息">修改活动单信息</a></li>
+            <li><a href="#实时查询活动委托">实时查询活动委托</a></li>
+          </ul>
+        </li>
+        <li><a href="#条件单">条件单</a>
+          <ul>
+            <li><a href="#创建条件委托单">创建条件委托单</a></li>
+            <li><a href="#查询条件委托单">查询条件委托单</a></li>
+            <li><a href="#撤销条件委托单">撤销条件委托单</a></li>
+            <li><a href="#撤销全部条件委托单">撤销全部条件委托单</a></li>
+            <li><a href="#修改条件委托单">修改条件委托单</a></li>
+            <li><a href="#实时查询条件委托单">实时查询条件委托单</a></li>
+          </ul>
+        </li>
+        <li><a href="#持仓">持仓</a></li>
+        <li><a href="#风险限制">风险限制</a></li>
+        <li><a href="#资金费率">资金费率</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

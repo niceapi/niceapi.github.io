@@ -14,6 +14,6 @@ bookCollapseSection: true
 该文档仅提供部分内容，以及仅提供Python示例代码。
 
  - [行情数据接口](./market-data-endpionts/)
- - [用户数据接口](./user-data-endpionts/)
+ - [交易数据接口](./trading-data-endpionts/)
  - [钱包数据接口](./wallet-data-endpionts/)
  - [其他接口](./api-data-endpionts/)

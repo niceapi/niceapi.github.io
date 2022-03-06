@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/linux/shell/</guid>
-      <description>Shell</description>
+      <description>Shell
+expect #  </description>
     </item>
     
     <item>
@@ -67,21 +68,21 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
     </item>
     
     <item>
+      <title>交易数据接口</title>
+      <link>https://niceapi.github.io/docs/quant/bybit/trading-data-endpionts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/quant/bybit/trading-data-endpionts/</guid>
+      <description>活动单 #  创建活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.place_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34;,  side=&amp;#34;Sell&amp;#34;,  order_type=&amp;#34;Limit&amp;#34;,  qty=0.01,  price=8083,  time_in_force=&amp;#34;GoodTillCancel&amp;#34;,  reduce_only=False,  close_on_trigger=False )) 查询活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.get_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34; )) 撤销活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.cancel_active_order(  symbol=&amp;#34;BTCUSDT&amp;#34;,  order_id=&amp;#34;&amp;#34; )) 撤销所有活动委托单 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.</description>
+    </item>
+    
+    <item>
       <title>多线程</title>
       <link>https://niceapi.github.io/docs/programming/python/thread/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/python/thread/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>用户数据接口</title>
-      <link>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://niceapi.github.io/docs/quant/bybit/user-data-endpionts/</guid>
-      <description>测试 #  </description>
     </item>
     
     <item>
@@ -102,7 +103,7 @@ git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .
       <description>启动Mariadb #  测试启动：
 mariadbd # or mysqld mysqladmin --version 相关命令：
 systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB systemctl restart mariadb #重启MariaDB systemctl enable mariadb #设置开机启动 打开mysql客户端：
-# 无密码登陆 mysql # 指定账户密码登陆 mysql -h [host] -u [user] -p 创建、删除数据库 #  CREATE DATABASE [NAME]; DROP DATABASE [NAME]; USE [NAME]; SHOW DATABASES; 数据类型 #  数值 #  时间 #  字符串 #     类型 大小（单位：bytes） 用途     CHAR 0-255 定长字符串   VARCHAR 0-65535 变长字符串   TINYBLOB 0-255 不超过 255 个字符的二进制字符串   TINYTEXT 0-255 短文本字符串   BLOB 0-65535 二进制形式的长文本数据   TEXT 0-65535 长文本数据   MEDIUMBLOB 0-16777 二进制形式的中等长度文本数据   MEDIUMTEXT 0-16777 中等长度文本数据   LONGBLOB 0-4294967295 二进制形式的极大文本数据   LONGTEXT 0-4294967295 极大文本数据    创建、删除表 #  创建表语法：</description>
+# 无密码登陆 mysql # 指定账户密码登陆 mysql -h [host] -u [user] -p 创建、删除数据库 #  CREATE DATABASE [NAME]; DROP DATABASE [NAME]; USE [NAME]; SHOW DATABASES; 数据类型 #  数值 #     类型 范围都是一样，，有符号要减一半分去负数那边     TINYINT 无符号：0~255, 有符号：-128~127   SMALLINT 65535   MEDIUMINT 16777215   INT 4294967295   BIGINT 18446744073709551615   FLOAT 别管了，精度低用这个速度快   DOUBLE 总之你用不完，精度高用这个数度快   DECIMAL     时间 #     类型 格式 用途     DATE YYYY-MM-DD 日期值   TIME HH:MM:SS 时间值   YEAR YYYY 年值（1901~2155）   DATETIME YYYY-MM-DD HH:MM:SS 混合日期和时间值   DATESTAMP YYYYMMDD HHMMSS 时间戳    字符串 #     类型 大小（单位：bytes） 用途     CHAR 0-255 定长字符串   VARCHAR 0-65535 变长字符串   TINYBLOB 0-255 不超过 255 个字符的二进制字符串   TINYTEXT 0-255 短文本字符串   BLOB 0-65535 二进制形式的长文本数据   TEXT 0-65535 长文本数据   MEDIUMBLOB 0-16777 二进制形式的中等长度文本数据   MEDIUMTEXT 0-16777 中等长度文本数据   LONGBLOB 0-4294967295 二进制形式的极大文本数据   LONGTEXT 0-4294967295 极大文本数据    创建、删除表 #  创建表语法：</description>
     </item>
     
     <item>
@@ -111,7 +112,7 @@ systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB sys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/wallet-data-endpionts/</guid>
-      <description>test #  </description>
+      <description>账户划转 #  合约、现货、理财账户资金划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_internal_transfer(  transfer_id=str(uuid4()),  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  from_account_type=&amp;#34;SPOT&amp;#34;,  to_account_type=&amp;#34;CONTRACT&amp;#34; )) 子母账户划转 #  from pybit import HTTP from uuid import uuid4 session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;,  api_key=&amp;#34;&amp;#34;, api_secret=&amp;#34;&amp;#34;) print(session.create_subaccount_transfer(  transfer_id=str(uuid4()), # UUID，全局唯一  coin=&amp;#34;BTC&amp;#34;,  amount=&amp;#34;0.1&amp;#34;,  sub_user_id=251711, # 子账户id  type=&amp;#34;IN&amp;#34; # 转入转出类型 )) </description>
     </item>
     
     <item>
@@ -120,7 +121,8 @@ systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB sys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/quant/bybit/api-data-endpionts/</guid>
-      <description>整合通用API和频率限制、错误码</description>
+      <description>获取bybit服务器时间 #  from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp;#34;) print(session.server_time()) 返回结果：
+{  &amp;#34;ret_code&amp;#34;: 0,  &amp;#34;ret_msg&amp;#34;: &amp;#34;OK&amp;#34;,  &amp;#34;ext_code&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;ext_info&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;result&amp;#34;: {},  &amp;#34;time_now&amp;#34;: &amp;#34;1577444332.192859&amp;#34; } </description>
     </item>
     
     <item>
