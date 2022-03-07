@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
-# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  emmet-vim #  写前端必备的emmet插件
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理 #  创建两个文件夹：
+mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
+:packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
+:helptags .vim/pack/[name]/start/[plugin]/docemmet-vim #  写前端必备的emmet插件
 git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Vim" />
 <meta property="og:description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
-# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  emmet-vim #  写前端必备的emmet插件
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理 #  创建两个文件夹：
+mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
+:packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
+:helptags .vim/pack/[name]/start/[plugin]/docemmet-vim #  写前端必备的emmet插件
 git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/linux/vim/" /><meta property="article:section" content="docs" />
@@ -453,6 +459,7 @@ https://github.com/alex-shpak/hugo-book
         </li>
         <li><a href="#插件">插件</a>
           <ul>
+            <li><a href="#vim8插件管理">vim8插件管理</a></li>
             <li><a href="#emmet-vim">emmet-vim</a></li>
           </ul>
         </li>
@@ -497,7 +504,18 @@ https://github.com/alex-shpak/hugo-book
   插件
   <a class="anchor" href="#%e6%8f%92%e4%bb%b6">#</a>
 </h2>
-<h3 id="emmet-vim">
+<h3 id="vim8插件管理">
+  vim8插件管理
+  <a class="anchor" href="#vim8%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86">#</a>
+</h3>
+<p>创建两个文件夹：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start -p
+</span></span><span style="display:flex;"><span>mkdir .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/opt -p
+</span></span></code></pre></div><p>start是自动加载，opt是手动加载，手动加载命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">packadd</span> [<span style="color:#a6e22e">plugin</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">helptags</span> .<span style="color:#a6e22e">vim</span><span style="color:#e6db74">/pack/</span>[<span style="color:#a6e22e">name</span>]<span style="color:#e6db74">/start/</span>[<span style="color:#a6e22e">plugin</span>]/<span style="color:#a6e22e">doc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="emmet-vim">
   emmet-vim
   <a class="anchor" href="#emmet-vim">#</a>
 </h3>
@@ -562,6 +580,7 @@ https://github.com/alex-shpak/hugo-book
         </li>
         <li><a href="#插件">插件</a>
           <ul>
+            <li><a href="#vim8插件管理">vim8插件管理</a></li>
             <li><a href="#emmet-vim">emmet-vim</a></li>
           </ul>
         </li>

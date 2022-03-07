@@ -29,7 +29,7 @@ const axios = require('axios');
 ```
 
 最简单的请求（默认GET）：
-```
+```js
 axios('/user/12345');
 ```
 
