@@ -100,10 +100,10 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       
       <guid>https://niceapi.github.io/docs/programming/linux/vim/</guid>
       <description>基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
-# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理 #  创建两个文件夹：
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理器 #  创建两个文件夹：
 mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
 :packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docemmet-vim #  写前端必备的emmet插件
+:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件
 git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ </description>
     </item>
     

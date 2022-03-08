@@ -27,7 +27,7 @@ weight: 2
 
 ## 插件
 
-### vim8插件管理
+### vim8插件管理器
 
 创建两个文件夹：
 ```bash
@@ -43,6 +43,13 @@ start是自动加载，opt是手动加载，手动加载命令：
 安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
 ```vim
 :helptags .vim/pack/[name]/start/[plugin]/doc
+```
+
+### ycm
+
+```
+apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi
+vam install youcompleteme python-jedi
 ```
 
 ### emmet-vim
