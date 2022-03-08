@@ -47,7 +47,7 @@ start是自动加载，opt是手动加载，手动加载命令：
 
 ### ycm
 
-```
+```bash
 apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi
 vam install youcompleteme python-jedi
 ```
