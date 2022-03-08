@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="切换布局 #  &#34;ui&#34;;  界面1();  function 界面1(){ 	ui.layout( 	&lt;vertical&gt; 	&lt;button id=&#34;ok&#34; text=&#34;切换界面&#34;/&gt; 	&lt;/vertical&gt; 	); 	ui.ok.click(function(){ 	界面2(); 	}); }  function 界面2(){ 	ui.layout( 	&lt;vertical&gt; 	&lt;button id=&#34;ok&#34; text=&#34;点一下回去&#34;/&gt; 	&lt;/vertical&gt; 	); 	ui.ok.click(function(){ 	界面1(); 	}); } ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="UI" />
+<meta property="og:description" content="切换布局 #  &#34;ui&#34;;  界面1();  function 界面1(){ 	ui.layout( 	&lt;vertical&gt; 	&lt;button id=&#34;ok&#34; text=&#34;切换界面&#34;/&gt; 	&lt;/vertical&gt; 	); 	ui.ok.click(function(){ 	界面2(); 	}); }  function 界面2(){ 	ui.layout( 	&lt;vertical&gt; 	&lt;button id=&#34;ok&#34; text=&#34;点一下回去&#34;/&gt; 	&lt;/vertical&gt; 	); 	ui.ok.click(function(){ 	界面1(); 	}); } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://niceapi.github.io/docs/programming/autojs/ui/" /><meta property="article:section" content="docs" />
+
+
+
+<title>UI | Nice API</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Nice API</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Quant</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bafd5750c16aeb31b26eea600a2d9e22" class="toggle"  />
+    <label for="section-bafd5750c16aeb31b26eea600a2d9e22" class="flex justify-between">
+      <a role="button" class="">Bybit量化交易接口</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/market-data-endpionts/" class="">行情数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/trading-data-endpionts/" class="">交易数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/wallet-data-endpionts/" class="">钱包数据接口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/quant/bybit/api-data-endpionts/" class="">其他接口</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Programming</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7b4b02413f02fa75f0a682cca8f6d205" class="toggle"  />
+    <label for="section-7b4b02413f02fa75f0a682cca8f6d205" class="flex justify-between">
+      <a role="button" class="">Javascript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/javascript/axios/" class="">Axios</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/javascript/pwa/" class="">渐进式加载</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0026b50f5ce95b86be9d47f6d4775604" class="toggle"  />
+    <label for="section-0026b50f5ce95b86be9d47f6d4775604" class="flex justify-between">
+      <a role="button" class="">Python</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/python/requests/" class="">Requests</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/python/flask/" class="">Flask Web</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33cd25cfe2fe5aa6319a5db5e4e58cee" class="toggle" checked />
+    <label for="section-33cd25cfe2fe5aa6319a5db5e4e58cee" class="flex justify-between">
+      <a role="button" class="">Autojs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/autojs/ui/" class=" active">UI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cfdedc2f56b640aa5073ea13252dd843" class="toggle"  />
+    <label for="section-cfdedc2f56b640aa5073ea13252dd843" class="flex justify-between">
+      <a role="button" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/shell/" class="">Shell</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/vim/" class="">Vim</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming/linux/mysql/" class="">Mysql</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Dev</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ae115d2a9ccb9f904bf887d848b5f4" class="toggle"  />
+    <label for="section-c0ae115d2a9ccb9f904bf887d848b5f4" class="flex justify-between">
+      <a role="button" class="">Typecho主题开发文档整理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/dev/typecho/guide/" class="">快速开始</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>UI</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#切换布局">切换布局</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="切换布局">
+  切换布局
+  <a class="anchor" href="#%e5%88%87%e6%8d%a2%e5%b8%83%e5%b1%80">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">&#34;ui&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">界面1</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">界面1</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">layout</span>(
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">vertical</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ok&#34;</span> <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;切换界面&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/vertical&gt;</span>
+</span></span><span style="display:flex;"><span>	);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">ok</span>.<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>	    <span style="color:#a6e22e">界面2</span>();
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">界面2</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">layout</span>(
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">vertical</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ok&#34;</span> <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;点一下回去&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/vertical&gt;</span>
+</span></span><span style="display:flex;"><span>	);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">ok</span>.<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>	   <span style="color:#a6e22e">界面1</span>();
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#切换布局">切换布局</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
