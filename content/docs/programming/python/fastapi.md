@@ -1,6 +1,6 @@
 ---
-title: "渐进式加载"
-weight: 10
+title: "Fastapi"
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -8,13 +8,3 @@ weight: 10
 # bookComments: false
 # bookSearchExclude: false
 ---
-
-## 目录结构
-
- - /icons/
- - /style/
- - index.html
- - manifest.json
- - sw.js
-
-

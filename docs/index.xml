@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 04 Mar 2022 13:37:57 +0000</lastBuildDate><atom:link href="https://niceapi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fastapi</title>
+      <link>https://niceapi.github.io/docs/programming/python/fastapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://niceapi.github.io/docs/programming/python/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Flask Socket Io</title>
       <link>https://niceapi.github.io/docs/programming/python/flask-socket-io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -204,8 +213,7 @@ req.url req.txet req.json() req.status_code req.history </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/javascript/pwa/</guid>
-      <description>Manifests.json #  Manifests.json
-{  &amp;#34;name&amp;#34;: &amp;#34;My PWA!&amp;#34;,  &amp;#34;short_name&amp;#34;: &amp;#34;PWA&amp;#34;,  &amp;#34;start_url&amp;#34;: &amp;#34;.&amp;#34;,  &amp;#34;display&amp;#34;: &amp;#34;standalone&amp;#34; }  // name -- PWA name // short_name -- Show underneath the mobile app icon // start_url -- If the user taps on the icon, this url is launched // display -- Customize what browser UI is shown when your app is launched. &amp;lt;link rel=&amp;#34;manifest&amp;#34; href=&amp;#34;/manifest.json&amp;#34;&amp;gt; Service Worker #  service-worker.js</description>
+      <description>目录结构 #   /icons/ /style/ index.html manifest.json sw.js  </description>
     </item>
     
     <item>

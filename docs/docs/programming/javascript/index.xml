@@ -25,8 +25,7 @@ axios.get(&amp;#39;/user&amp;#39;, {  params: {  ID: 12345  }  })  .then(functio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/javascript/pwa/</guid>
-      <description>Manifests.json #  Manifests.json
-{  &amp;#34;name&amp;#34;: &amp;#34;My PWA!&amp;#34;,  &amp;#34;short_name&amp;#34;: &amp;#34;PWA&amp;#34;,  &amp;#34;start_url&amp;#34;: &amp;#34;.&amp;#34;,  &amp;#34;display&amp;#34;: &amp;#34;standalone&amp;#34; }  // name -- PWA name // short_name -- Show underneath the mobile app icon // start_url -- If the user taps on the icon, this url is launched // display -- Customize what browser UI is shown when your app is launched. &amp;lt;link rel=&amp;#34;manifest&amp;#34; href=&amp;#34;/manifest.json&amp;#34;&amp;gt; Service Worker #  service-worker.js</description>
+      <description>目录结构 #   /icons/ /style/ index.html manifest.json sw.js  </description>
     </item>
     
   </channel>
