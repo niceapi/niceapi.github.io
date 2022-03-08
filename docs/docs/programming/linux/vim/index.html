@@ -4,19 +4,27 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
-# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理器 #  创建两个文件夹：
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc进阶 #  快捷键绑定 #  map用于绑定快捷键，同样的还有：
+ nmap vmap imap  分别对应不同模式下的绑定，用法：
+nmap &lt;c-d&gt; ddvmap / yy实现了正常模式下ctrl&#43;d删除行，视图模式下复制行。
+ imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。
+ :imap &lt;c-d&gt; &lt;esc&gt;dd上面代码，实现了在插入模式下，按下ctrl&#43;d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：
+:imap &lt;c-d&gt; &lt;esc&gt;ddi插件 #  vim8插件管理器 #  创建两个文件夹：
 mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
 :packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件
-git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ ">
+:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Vim" />
 <meta property="og:description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
-# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc插件 #  vim8插件管理器 #  创建两个文件夹：
+# 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc进阶 #  快捷键绑定 #  map用于绑定快捷键，同样的还有：
+ nmap vmap imap  分别对应不同模式下的绑定，用法：
+nmap &lt;c-d&gt; ddvmap / yy实现了正常模式下ctrl&#43;d删除行，视图模式下复制行。
+ imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。
+ :imap &lt;c-d&gt; &lt;esc&gt;dd上面代码，实现了在插入模式下，按下ctrl&#43;d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：
+:imap &lt;c-d&gt; &lt;esc&gt;ddi插件 #  vim8插件管理器 #  创建两个文件夹：
 mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
 :packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件
-git clone https://github.com/mattn/emmet-vim.git cd emmet-vim mkdir .vim mkdir .vim/plugin mkdir .vim/autoload cp plugin/emmet.vim ~/.vim/plugin/ cp autoload/emmet.vim ~/.vim/autoload/ cp -a autoload/emmet ~/.vim/autoload/ " />
+:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/linux/vim/" /><meta property="article:section" content="docs" />
 
@@ -472,6 +480,11 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#底线模式">底线模式</a></li>
           </ul>
         </li>
+        <li><a href="#进阶">进阶</a>
+          <ul>
+            <li><a href="#快捷键绑定">快捷键绑定</a></li>
+          </ul>
+        </li>
         <li><a href="#插件">插件</a>
           <ul>
             <li><a href="#vim8插件管理器">vim8插件管理器</a></li>
@@ -516,6 +529,30 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">1</span>,$<span style="color:#a6e22e">s</span><span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">1</span>,$<span style="color:#a6e22e">s</span><span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">gc</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">100</span>s<span style="color:#e6db74">/word1/</span><span style="color:#a6e22e">word2</span>/<span style="color:#a6e22e">gc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="进阶">
+  进阶
+  <a class="anchor" href="#%e8%bf%9b%e9%98%b6">#</a>
+</h2>
+<h3 id="快捷键绑定">
+  快捷键绑定
+  <a class="anchor" href="#%e5%bf%ab%e6%8d%b7%e9%94%ae%e7%bb%91%e5%ae%9a">#</a>
+</h3>
+<p><code>map</code>用于绑定快捷键，同样的还有：</p>
+<ul>
+<li>nmap</li>
+<li>vmap</li>
+<li>imap</li>
+</ul>
+<p>分别对应不同模式下的绑定，用法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">nmap</span> &lt;<span style="color:#a6e22e">c</span>-<span style="color:#a6e22e">d</span>&gt; <span style="color:#a6e22e">dd</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">vmap</span> / <span style="color:#a6e22e">yy</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>实现了正常模式下ctrl+d删除行，视图模式下复制行。</p>
+<blockquote>
+<p>imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">imap</span> &lt;<span style="color:#a6e22e">c</span>-<span style="color:#a6e22e">d</span>&gt; &lt;<span style="color:#a6e22e">esc</span>&gt;<span style="color:#a6e22e">dd</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>上面代码，实现了在插入模式下，按下ctrl+d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">imap</span> &lt;<span style="color:#a6e22e">c</span>-<span style="color:#a6e22e">d</span>&gt; &lt;<span style="color:#a6e22e">esc</span>&gt;<span style="color:#a6e22e">ddi</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><h2 id="插件">
   插件
   <a class="anchor" href="#%e6%8f%92%e4%bb%b6">#</a>
@@ -598,6 +635,11 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#一般模式">一般模式</a></li>
             <li><a href="#编辑模式">编辑模式</a></li>
             <li><a href="#底线模式">底线模式</a></li>
+          </ul>
+        </li>
+        <li><a href="#进阶">进阶</a>
+          <ul>
+            <li><a href="#快捷键绑定">快捷键绑定</a></li>
           </ul>
         </li>
         <li><a href="#插件">插件</a>
