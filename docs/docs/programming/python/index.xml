@@ -12,9 +12,8 @@
       
       <guid>https://niceapi.github.io/docs/programming/python/fastapi/</guid>
       <description>基础 #  最小程序 #  from fastapi import FastAPI  app = FastAPI()  @app.get(&amp;#34;/&amp;#34;) async def root():  return {&amp;#34;message&amp;#34;: &amp;#34;Hello World&amp;#34;} 用uvicorn运行：
-uvicorn main:app --reload # --reload跟flask中的debug功能一样 线程池 #  @router.get(&amp;#34;/test&amp;#34;) async def test():  loop = asyncio.get_event_loop()  await loop.run_in_executor(None, time.sleep, 1)  return {&amp;#34;message&amp;#34;: &amp;#34;线程池中运行sleep函数&amp;#34;} 文档接口 #  默认接口：/docs/ 可选接口：/redoc
-安全 #  关闭文档接口 #  app = FastAPI(docs_url=None, redoc_url=None) 在开发时开启文档，部署时关闭文档，在系统中添加环境变量env=develop，然后修改代码：
-import os from fastapi import FastAPI  env = os.</description>
+uvicorn main:app --reload # --reload跟flask中的debug功能一样 路由 #  为了准确防止用户名为“me”的用户抢占个人信息，要把“me”先定义在前面。
+from fastapi import FastAPI  app = FastAPI()  @app.get(&amp;#34;/users/me&amp;#34;) async def read_user_me():  return {&amp;#34;user_id&amp;#34;: &amp;#34;the current user&amp;#34;}  @app.get(&amp;#34;/users/{user_id}&amp;#34;) async def read_user(user_id: str):  return {&amp;#34;user_id&amp;#34;: user_id} 路径包含 #  from fastapi import FastAPI  app = FastAPI()  @app.</description>
     </item>
     
     <item>

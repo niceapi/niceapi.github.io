@@ -27,6 +27,37 @@ uvicorn main:app --reload
 # --reload跟flask中的debug功能一样
 ```
 
+### 路由
+
+为了准确防止用户名为“me”的用户抢占个人信息，要把“me”先定义在前面。
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/users/me")
+async def read_user_me():
+    return {"user_id": "the current user"}
+
+@app.get("/users/{user_id}")
+async def read_user(user_id: str):
+    return {"user_id": user_id}
+```
+
+### 路径包含
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/files/{file_path:path}")
+async def read_file(file_path: str):
+    return {"file_path": file_path}
+
+```
+
+
 ### 线程池
 
 ```python
