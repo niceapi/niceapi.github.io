@@ -91,3 +91,46 @@ if env != 'develop':
 else:
     app = FastAPI()
 ```
+
+
+## 其他
+
+### 使用jinja2模板
+
+fastapi官方示例：
+```python
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+
+app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+templates = Jinja2Templates(directory="templates")
+
+@app.get("/items/{id}", response_class=HTMLResponse)
+async def read_item(request: Request, id: str):
+    return templates.TemplateResponse("item.html", {"request": request, "id": id})
+```
+
+`temlates/item.html`:
+```html
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Item ID: {{ id }}</h1>
+</body>
+</html>
+```
+
+`static/style.css`:
+```css
+h1 {
+    color: green;
+}
+```
