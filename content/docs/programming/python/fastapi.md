@@ -95,6 +95,28 @@ else:
 
 ## 其他
 
+### 返回HTML
+
+需要安装模块，注意，responses是复数:
+```
+pip install fastapi.responses
+```
+
+```python
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
+app=FastAPI()
+
+html="""
+<h1>hello</h1>
+"""
+
+@app.get("/")
+async def index():
+    return HTMLResponse(html)
+```
+
 ### 使用jinja2模板
 
 fastapi官方示例：
