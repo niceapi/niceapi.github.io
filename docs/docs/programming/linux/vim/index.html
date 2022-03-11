@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
+<meta name="description" content="安装事项 #  Termux中vim #  要按顺序装，不然会出错：
+pkg install vim pkg install vim-python 基础操作 #  vim帮助 #  自带入门教程
+vimtutor vim中打开帮助
+:help一般模式 #  编辑模式 #  底线模式 #  搜索替换：
 # 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc进阶 #  快捷键绑定 #  map用于绑定快捷键，同样的还有：
  nmap vmap imap  分别对应不同模式下的绑定，用法：
 nmap &lt;c-d&gt; ddvmap / yy实现了正常模式下ctrl&#43;d删除行，视图模式下复制行。
  imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。
  :imap &lt;c-d&gt; &lt;esc&gt;dd上面代码，实现了在插入模式下，按下ctrl&#43;d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：
 :imap &lt;c-d&gt; &lt;esc&gt;ddi插件 #  vim8插件管理器 #  创建两个文件夹：
-mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
-:packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件">
+mkdir .vim/pack/[name]/start -p mkdir .">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Vim" />
-<meta property="og:description" content="基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
+<meta property="og:description" content="安装事项 #  Termux中vim #  要按顺序装，不然会出错：
+pkg install vim pkg install vim-python 基础操作 #  vim帮助 #  自带入门教程
+vimtutor vim中打开帮助
+:help一般模式 #  编辑模式 #  底线模式 #  搜索替换：
 # 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc进阶 #  快捷键绑定 #  map用于绑定快捷键，同样的还有：
  nmap vmap imap  分别对应不同模式下的绑定，用法：
 nmap &lt;c-d&gt; ddvmap / yy实现了正常模式下ctrl&#43;d删除行，视图模式下复制行。
  imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。
  :imap &lt;c-d&gt; &lt;esc&gt;dd上面代码，实现了在插入模式下，按下ctrl&#43;d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：
 :imap &lt;c-d&gt; &lt;esc&gt;ddi插件 #  vim8插件管理器 #  创建两个文件夹：
-mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
-:packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件" />
+mkdir .vim/pack/[name]/start -p mkdir ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://niceapi.github.io/docs/programming/linux/vim/" /><meta property="article:section" content="docs" />
 
@@ -484,8 +486,14 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#安装事项">安装事项</a>
+          <ul>
+            <li><a href="#termux中vim">Termux中vim</a></li>
+          </ul>
+        </li>
         <li><a href="#基础操作">基础操作</a>
           <ul>
+            <li><a href="#vim帮助">vim帮助</a></li>
             <li><a href="#一般模式">一般模式</a></li>
             <li><a href="#编辑模式">编辑模式</a></li>
             <li><a href="#底线模式">底线模式</a></li>
@@ -501,6 +509,20 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#vim8插件管理器">vim8插件管理器</a></li>
             <li><a href="#ycm">ycm</a></li>
             <li><a href="#emmet-vim">emmet-vim</a></li>
+            <li><a href="#vim-airline">vim-airline</a></li>
+            <li><a href="#nerdtree">NERDTree</a></li>
+            <li><a href="#python自动对齐代码格式化">python自动对齐/代码格式化</a></li>
+            <li><a href="#缩进对齐线">缩进对齐线</a></li>
+            <li><a href="#快捷注释">快捷注释</a></li>
+            <li><a href="#自动补充括号">自动补充括号</a></li>
+            <li><a href="#中文帮助文档">中文帮助文档</a></li>
+          </ul>
+        </li>
+        <li><a href="#配置">配置</a>
+          <ul>
+            <li><a href="#更换主题">更换主题</a></li>
+            <li><a href="#关闭preview">关闭preview</a></li>
+            <li><a href="#一键运行">一键运行</a></li>
           </ul>
         </li>
       </ul>
@@ -517,11 +539,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="基础操作">
+  <article class="markdown"><h2 id="安装事项">
+  安装事项
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85%e4%ba%8b%e9%a1%b9">#</a>
+</h2>
+<h3 id="termux中vim">
+  Termux中vim
+  <a class="anchor" href="#termux%e4%b8%advim">#</a>
+</h3>
+<p>要按顺序装，不然会出错：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pkg install vim
+</span></span><span style="display:flex;"><span>pkg install vim-python
+</span></span></code></pre></div><h2 id="基础操作">
   基础操作
   <a class="anchor" href="#%e5%9f%ba%e7%a1%80%e6%93%8d%e4%bd%9c">#</a>
 </h2>
-<h3 id="一般模式">
+<h3 id="vim帮助">
+  vim帮助
+  <a class="anchor" href="#vim%e5%b8%ae%e5%8a%a9">#</a>
+</h3>
+<p>自带入门教程</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vimtutor
+</span></span></code></pre></div><p>vim中打开帮助</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">help</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="一般模式">
   一般模式
   <a class="anchor" href="#%e4%b8%80%e8%88%ac%e6%a8%a1%e5%bc%8f">#</a>
 </h3>
@@ -598,7 +639,106 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>cp plugin/emmet.vim ~/.vim/plugin/
 </span></span><span style="display:flex;"><span>cp autoload/emmet.vim ~/.vim/autoload/
 </span></span><span style="display:flex;"><span>cp -a autoload/emmet ~/.vim/autoload/
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><h3 id="vim-airline">
+  vim-airline
+  <a class="anchor" href="#vim-airline">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/vim-airline/vim-airline
+</span></span></code></pre></div><h3 id="nerdtree">
+  NERDTree
+  <a class="anchor" href="#nerdtree">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/preservim/nerdtree
+</span></span></code></pre></div><p>快捷键绑定：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">leader</span>&gt;<span style="color:#a6e22e">n</span> :<span style="color:#a6e22e">NERDTreeFocus</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">n</span>&gt; :<span style="color:#a6e22e">NERDTree</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">t</span>&gt; :<span style="color:#a6e22e">NERDTreeToggle</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">f</span>&gt; :<span style="color:#a6e22e">NERDTreeFind</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="python自动对齐代码格式化">
+  python自动对齐/代码格式化
+  <a class="anchor" href="#python%e8%87%aa%e5%8a%a8%e5%af%b9%e9%bd%90%e4%bb%a3%e7%a0%81%e6%a0%bc%e5%bc%8f%e5%8c%96">#</a>
+</h3>
+<p>需先从pip安装：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install autopep8
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/tell-k/vim-autopep8
+</span></span></code></pre></div><p>使用方法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">Autopep8</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>可用u撤销格式化的结果</p>
+<h3 id="缩进对齐线">
+  缩进对齐线
+  <a class="anchor" href="#%e7%bc%a9%e8%bf%9b%e5%af%b9%e9%bd%90%e7%ba%bf">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/Yggdroot/indentLine
+</span></span></code></pre></div><p>使用方法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">IndentLinesToggle</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="快捷注释">
+  快捷注释
+  <a class="anchor" href="#%e5%bf%ab%e6%8d%b7%e6%b3%a8%e9%87%8a">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/preservim/nerdcommenter
+</span></span></code></pre></div><p>暂时不会用</p>
+<h3 id="自动补充括号">
+  自动补充括号
+  <a class="anchor" href="#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%85%e6%8b%ac%e5%8f%b7">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd .vim/pack/<span style="color:#f92672">[</span>name<span style="color:#f92672">]</span>/start/
+</span></span><span style="display:flex;"><span>git clone https://github.com/jiangmiao/auto-pairs
+</span></span></code></pre></div><h3 id="中文帮助文档">
+  中文帮助文档
+  <a class="anchor" href="#%e4%b8%ad%e6%96%87%e5%b8%ae%e5%8a%a9%e6%96%87%e6%a1%a3">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">cd</span> .<span style="color:#a6e22e">vim</span><span style="color:#e6db74">/pack/</span>[<span style="color:#a6e22e">name</span>]<span style="color:#e6db74">/start/</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">clone</span> <span style="color:#a6e22e">https</span>:<span style="color:#e6db74">//</span><span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">com</span><span style="color:#e6db74">/yianwillis/</span><span style="color:#a6e22e">vimcdoc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="配置">
+  配置
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae">#</a>
+</h2>
+<h3 id="更换主题">
+  更换主题
+  <a class="anchor" href="#%e6%9b%b4%e6%8d%a2%e4%b8%bb%e9%a2%98">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">colorscheme</span> [<span style="color:#a6e22e">scheme</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="关闭preview">
+  关闭preview
+  <a class="anchor" href="#%e5%85%b3%e9%97%adpreview">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">completeopt</span>-=<span style="color:#a6e22e">preview</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="一键运行">
+  一键运行
+  <a class="anchor" href="#%e4%b8%80%e9%94%ae%e8%bf%90%e8%a1%8c">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">map</span> &lt;<span style="color:#a6e22e">F5</span>&gt; :<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">CompileRunGcc</span>()&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">func</span>! <span style="color:#a6e22e">CompileRunGcc</span>()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;w&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">if</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;c&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!g++ % -o %&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!time ./%&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;cpp&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!g++ % -o %&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!time ./%&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;java&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!javac %&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!time java %&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;sh&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            :!<span style="color:#a6e22e">time</span> <span style="color:#a6e22e">bash</span> %<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;python&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!time python %&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;html&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!firefox % &amp;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;go&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">    &#34;        exec &#34;!go build %&lt;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!time go run %&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> &amp;<span style="color:#a6e22e">filetype</span> == <span style="color:#e6db74">&#39;mkd&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!~/.vim/markdown.pl % &gt; %.html &amp;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            <span style="color:#a6e22e">exec</span> <span style="color:#e6db74">&#34;!firefox %.html &amp;&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">endfunc</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -641,8 +781,14 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
+        <li><a href="#安装事项">安装事项</a>
+          <ul>
+            <li><a href="#termux中vim">Termux中vim</a></li>
+          </ul>
+        </li>
         <li><a href="#基础操作">基础操作</a>
           <ul>
+            <li><a href="#vim帮助">vim帮助</a></li>
             <li><a href="#一般模式">一般模式</a></li>
             <li><a href="#编辑模式">编辑模式</a></li>
             <li><a href="#底线模式">底线模式</a></li>
@@ -658,6 +804,20 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#vim8插件管理器">vim8插件管理器</a></li>
             <li><a href="#ycm">ycm</a></li>
             <li><a href="#emmet-vim">emmet-vim</a></li>
+            <li><a href="#vim-airline">vim-airline</a></li>
+            <li><a href="#nerdtree">NERDTree</a></li>
+            <li><a href="#python自动对齐代码格式化">python自动对齐/代码格式化</a></li>
+            <li><a href="#缩进对齐线">缩进对齐线</a></li>
+            <li><a href="#快捷注释">快捷注释</a></li>
+            <li><a href="#自动补充括号">自动补充括号</a></li>
+            <li><a href="#中文帮助文档">中文帮助文档</a></li>
+          </ul>
+        </li>
+        <li><a href="#配置">配置</a>
+          <ul>
+            <li><a href="#更换主题">更换主题</a></li>
+            <li><a href="#关闭preview">关闭preview</a></li>
+            <li><a href="#一键运行">一键运行</a></li>
           </ul>
         </li>
       </ul>

@@ -9,7 +9,29 @@ weight: 2
 # bookSearchExclude: false
 ---
 
+## 安装事项
+
+### Termux中vim
+
+要按顺序装，不然会出错：
+```bash
+pkg install vim
+pkg install vim-python
+```
+
 ## 基础操作
+
+### vim帮助
+
+自带入门教程
+```bash
+vimtutor
+```
+
+vim中打开帮助
+```vim
+:help
+```
 
 ### 一般模式
 ### 编辑模式
@@ -93,3 +115,119 @@ cp autoload/emmet.vim ~/.vim/autoload/
 cp -a autoload/emmet ~/.vim/autoload/
 ```
 
+### vim-airline
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/vim-airline/vim-airline
+```
+
+### NERDTree
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/preservim/nerdtree
+```
+
+快捷键绑定：
+```vim
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+```
+
+### python自动对齐/代码格式化
+
+需先从pip安装：
+```bash
+pip install autopep8
+```
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/tell-k/vim-autopep8
+```
+
+使用方法：
+```vim
+:Autopep8
+```
+可用u撤销格式化的结果
+
+### 缩进对齐线
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/Yggdroot/indentLine
+```
+使用方法：
+```vim
+:IndentLinesToggle
+```
+
+### 快捷注释
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/preservim/nerdcommenter
+```
+暂时不会用
+
+### 自动补充括号
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/jiangmiao/auto-pairs
+```
+
+
+### 中文帮助文档
+
+```vim
+cd .vim/pack/[name]/start/
+git clone https://github.com/yianwillis/vimcdoc
+```
+
+## 配置
+
+### 更换主题
+
+```vim
+:colorscheme [scheme]
+```
+
+### 关闭preview
+```vim
+set completeopt-=preview
+```
+
+### 一键运行
+```vim
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+        exec "w"
+if &filetype == 'c'
+            exec "!g++ % -o %<"
+            exec "!time ./%<"
+elseif &filetype == 'cpp'
+            exec "!g++ % -o %<"
+            exec "!time ./%<"
+elseif &filetype == 'java'
+            exec "!javac %"
+            exec "!time java %<"
+elseif &filetype == 'sh'
+            :!time bash %
+elseif &filetype == 'python'
+            exec "!time python %"
+elseif &filetype == 'html'
+            exec "!firefox % &"
+elseif &filetype == 'go'
+    "        exec "!go build %<"
+            exec "!time go run %"
+elseif &filetype == 'mkd'
+            exec "!~/.vim/markdown.pl % > %.html &"
+            exec "!firefox %.html &"
+endif
+    endfunc
+```

@@ -101,16 +101,17 @@ from pybit import HTTP session = HTTP(&amp;#34;https://api-testnet.bybit.com&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://niceapi.github.io/docs/programming/linux/vim/</guid>
-      <description>基础操作 #  一般模式 #  编辑模式 #  底线模式 #  搜索替换：
+      <description>安装事项 #  Termux中vim #  要按顺序装，不然会出错：
+pkg install vim pkg install vim-python 基础操作 #  vim帮助 #  自带入门教程
+vimtutor vim中打开帮助
+:help一般模式 #  编辑模式 #  底线模式 #  搜索替换：
 # 用法:n1,n2s/word1/word2/g# 示例:1,$s/word1/word2/g:1,$s/word1/word2/gc:50,100s/word1/word2/gc进阶 #  快捷键绑定 #  map用于绑定快捷键，同样的还有：
  nmap vmap imap  分别对应不同模式下的绑定，用法：
 nmap &amp;lt;c-d&amp;gt; ddvmap / yy实现了正常模式下ctrl+d删除行，视图模式下复制行。
  imap比较特殊，它的命令无法直接执行，需要回到正常模式，再切换回插入模式。
  :imap &amp;lt;c-d&amp;gt; &amp;lt;esc&amp;gt;dd上面代码，实现了在插入模式下，按下ctrl+d回到正常模式，然后正常模式下执行删除行，但是留在了正常模式，要想再换回插入模式，可改为：
 :imap &amp;lt;c-d&amp;gt; &amp;lt;esc&amp;gt;ddi插件 #  vim8插件管理器 #  创建两个文件夹：
-mkdir .vim/pack/[name]/start -p mkdir .vim/pack/[name]/opt -p start是自动加载，opt是手动加载，手动加载命令：
-:packadd [plugin]安装插件帮助文档，每个插件都有个doc文件夹用来存放帮助文档，进入vim：
-:helptags .vim/pack/[name]/start/[plugin]/docycm #  apt install vim-gtk3 vim-addon-manager vim-youcompleteme vim-python-jedi vam install youcompleteme python-jedi emmet-vim #  写前端必备的emmet插件</description>
+mkdir .vim/pack/[name]/start -p mkdir .</description>
     </item>
     
     <item>
