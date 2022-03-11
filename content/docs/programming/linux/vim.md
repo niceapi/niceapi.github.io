@@ -181,10 +181,24 @@ cd .vim/pack/[name]/start/
 git clone https://github.com/jiangmiao/auto-pairs
 ```
 
+### python-jedi
+
+这个插件有点卡
+
+需先安装jedi：
+```bash
+pip install jedi
+```
+
+```bash
+cd .vim/pack/[name]/start/
+git clone https://github.com/davidhalter/jedi-vim
+```
+
 
 ### 中文帮助文档
 
-```vim
+```bash
 cd .vim/pack/[name]/start/
 git clone https://github.com/yianwillis/vimcdoc
 ```
