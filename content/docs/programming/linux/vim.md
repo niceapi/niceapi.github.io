@@ -172,7 +172,7 @@ git clone https://github.com/Yggdroot/indentLine
 cd .vim/pack/[name]/start/
 git clone https://github.com/preservim/nerdcommenter
 ```
-暂时不会用
+`\cc`注释，`\cu`取消注释。
 
 ### 自动补充括号
 
