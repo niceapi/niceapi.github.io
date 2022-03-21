@@ -86,7 +86,7 @@ from fastapi import FastAPI  app = FastAPI()  @app.get(&amp;#34;/users/me&amp;#3
       
       <guid>https://niceapi.github.io/docs/programming/python/requests/</guid>
       <description>发送请求 #  req = requests.get(url) req = requests.post(url,data={&amp;#39;key&amp;#39;:&amp;#39;value&amp;#39;}) req = requests.put(url,data={&amp;#39;key&amp;#39;:&amp;#39;value&amp;#39;}) req = requests.delete(url) req = requests.head(url) req = requests.options(url) 响应内容
-req.url req.txet req.json() req.status_code req.history </description>
+req.url req.txet req.json() req.status_code req.history get请求参数格式化 #  import requests import json  r=requests.get(&amp;#34;https://api-testnet.bybit.com/public/linear/kline?symbol=BTCUSDT&amp;amp;interval=1&amp;amp;limit=2&amp;amp;from=1581231260&amp;#34;) print(json.dumps(json.loads(r.text)[&amp;#39;result&amp;#39;],indent=4,sort_keys=True))  kline=&amp;#34;https://api-testnet.bybit.com/public/linear/kline&amp;#34; params={  &amp;#39;symbol&amp;#39;:&amp;#39;BTCUSDT&amp;#39;,  &amp;#39;interval&amp;#39;:1,  &amp;#39;limit&amp;#39;:2,  &amp;#39;from&amp;#39;:1581231260  } r1=requests.get(kline,params=params) data=json.loads(r1.text) data=json.dumps(data[&amp;#39;result&amp;#39;],indent=4,sort_keys=True) print(data) </description>
     </item>
     
     <item>

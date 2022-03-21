@@ -28,3 +28,23 @@ req.status_code
 req.history
 ```
 
+### get请求参数格式化
+```python
+import requests
+import json
+
+r=requests.get("https://api-testnet.bybit.com/public/linear/kline?symbol=BTCUSDT&interval=1&limit=2&from=1581231260")
+print(json.dumps(json.loads(r.text)['result'],indent=4,sort_keys=True))
+
+kline="https://api-testnet.bybit.com/public/linear/kline"
+params={
+        'symbol':'BTCUSDT',
+        'interval':1,
+        'limit':2,
+        'from':1581231260
+        }
+r1=requests.get(kline,params=params)
+data=json.loads(r1.text)
+data=json.dumps(data['result'],indent=4,sort_keys=True)
+print(data)
+```
